@@ -1,0 +1,2160 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SBOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15624
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (29) boot: ESP-IDF v5.1.5 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov  9 2024 17:18:17[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0aed0h ( 44752) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001aef8 vaddr=3ffb0000 size=02284h (  8836) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001d184 vaddr=40080000 size=02e94h ( 11924) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16450h ( 91216) map[0m
+[0;32mI (166) esp_image: segment 4: paddr=00036478 vaddr=40082e94 size=0a238h ( 41528) load[0m
+[0;32mI (190) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (190) boot: Disabling RNG early entropy source...[0m
+[0;32mI (201) cpu_start: Multicore app[0m
+[0;32mI (202) cpu_start: Pro cpu up.[0m
+[0;32mI (203) cpu_start: Starting app cpu, entry point is 0x40081164[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (220) cpu_start: Pro cpu start user code[0m
+[0;32mI (220) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (220) cpu_start: Application information:[0m
+[0;32mI (225) cpu_start: Project name:     EPDTEST2[0m
+[0;32mI (230) cpu_start: App version:      1[0m
+[0;32mI (234) cpu_start: Compile time:     Nov 12 2024 18:12:21[0m
+[0;32mI (240) cpu_start: ELF file SHA256:  3f919592040e86ea...[0m
+[0;32mI (246) cpu_start: ESP-IDF:          v5.1.5[0m
+[0;32mI (251) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (256) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (261) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (265) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (273) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (279) heap_init: At 3FFB2B48 len 0002D4B8 (181 KiB): DRAM[0m
+[0;32mI (285) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (291) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (298) heap_init: At 4008D0CC len 00012F34 (75 KiB): IRAM[0m
+[0;32mI (305) spi_flash: detected chip: generic[0m
+[0;32mI (308) spi_flash: flash io: dio[0m
+[0;32mI (313) app_start: Starting scheduler on CPU0[0m
+[0;32mI (317) app_start: Starting scheduler on CPU1[0m
+[0;32mI (317) main_task: Started on CPU0[0m
+[0;32mI (327) main_task: Calling app_main()[0m
+[0;33mW (327) DISPLAY: Before EDP Reset[0m
+[0;33mW (727) DISPLAY: After EDP Init [0m
+[0;32mI (727) DISPLAY: EPD_DC_PIN level Command : 0[0m
+[0;32mI (727) DISPLAY: EPD_CS_PIN level Command : 1[0m
+[0;32mI (727) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (927) DISPLAY: After Soft Reset[0m
+[0;32mI (927) DISPLAY: EPD_DC_PIN level Command : 0[0m
+[0;32mI (927) DISPLAY: EPD_CS_PIN level Command : 1[0m
+[0;32mI (927) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;32mI (927) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (937) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (937) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;32mI (947) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (947) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (957) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;32mI (957) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (967) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (967) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (977) DISPLAY: After Drivrer Control Output[0m
+[0;32mI (977) DISPLAY: EPD_DC_PIN level Command : 0[0m
+[0;32mI (987) DISPLAY: EPD_CS_PIN level Command : 1[0m
+[0;32mI (987) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;32mI (997) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (997) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1007) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1007) DISPLAY: After Data Entry Mode[0m
+[0;32mI (1017) DISPLAY: EPD_DC_PIN level Command : 0[0m
+[0;32mI (1017) DISPLAY: EPD_CS_PIN level Command : 1[0m
+[0;32mI (1027) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;32mI (1027) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1037) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1037) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;32mI (1047) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1047) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1057) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1057) DISPLAY: After RAM X Start[0m
+[0;32mI (1067) DISPLAY: EPD_DC_PIN level Command : 0[0m
+[0;32mI (1067) DISPLAY: EPD_CS_PIN level Command : 1[0m
+[0;32mI (1077) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;32mI (1077) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1087) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1087) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;32mI (1097) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1097) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1107) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;32mI (1107) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1117) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1117) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;32mI (1127) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1127) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1137) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1137) DISPLAY: After RAM Y Start[0m
+[0;32mI (1137) DISPLAY: EPD_DC_PIN level Command : 0[0m
+[0;32mI (1147) DISPLAY: EPD_CS_PIN level Command : 1[0m
+[0;32mI (1147) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;32mI (1157) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1157) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1167) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1167) DISPLAY: Border Waveform[0m
+[0;32mI (1177) DISPLAY: EPD_DC_PIN level Command : 0[0m
+[0;32mI (1177) DISPLAY: EPD_CS_PIN level Command : 1[0m
+[0;32mI (1187) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;32mI (1187) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1197) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1197) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1207) DISPLAY: Temp. Sensor[0m
+[0;32mI (1207) DISPLAY: EPD_DC_PIN level Command : 0[0m
+[0;32mI (1217) DISPLAY: EPD_CS_PIN level Command : 1[0m
+[0;32mI (1217) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;32mI (1227) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1227) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1237) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1237) DISPLAY: After Ram X Counter[0m
+[0;32mI (1247) DISPLAY: EPD_DC_PIN level Command : 0[0m
+[0;32mI (1247) DISPLAY: EPD_CS_PIN level Command : 1[0m
+[0;32mI (1257) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;32mI (1257) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1267) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1267) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;32mI (1277) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1277) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1287) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1287) DISPLAY: After RAM Y Counter[0m
+[0;33mW (1497) DISPLAY: After WaitUntilIdle[0m
+[0;32mI (1497) DISPLAY: Display initialized[0m
+[0;32mI (1497) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;32mI (1497) DISPLAY: EPD_DC_PIN level Command : 0[0m
+[0;32mI (1497) DISPLAY: EPD_CS_PIN level Command : 1[0m
+[0;32mI (1507) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1507) Display_clear: After Send Command[0m
+[0;32mI (1517) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1517) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1527) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1527) Display_clear: After Send data of For Loop[0m
+[0;32mI (1537) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1537) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1547) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1547) Display_clear: After Send data of For Loop[0m
+[0;32mI (1557) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1557) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1567) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1567) Display_clear: After Send data of For Loop[0m
+[0;32mI (1577) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1577) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1587) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1587) Display_clear: After Send data of For Loop[0m
+[0;32mI (1597) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1597) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1607) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1607) Display_clear: After Send data of For Loop[0m
+[0;32mI (1617) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1617) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1627) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1627) Display_clear: After Send data of For Loop[0m
+[0;32mI (1637) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1647) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1647) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1657) Display_clear: After Send data of For Loop[0m
+[0;32mI (1657) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1667) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1667) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1677) Display_clear: After Send data of For Loop[0m
+[0;32mI (1677) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1687) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1687) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1697) Display_clear: After Send data of For Loop[0m
+[0;32mI (1697) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1707) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1707) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1717) Display_clear: After Send data of For Loop[0m
+[0;32mI (1717) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1727) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1727) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1737) Display_clear: After Send data of For Loop[0m
+[0;32mI (1737) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1747) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1747) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1757) Display_clear: After Send data of For Loop[0m
+[0;32mI (1757) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1767) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1767) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1777) Display_clear: After Send data of For Loop[0m
+[0;32mI (1777) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1787) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1787) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1797) Display_clear: After Send data of For Loop[0m
+[0;32mI (1797) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1807) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1807) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1817) Display_clear: After Send data of For Loop[0m
+[0;32mI (1817) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1827) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1827) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1837) Display_clear: After Send data of For Loop[0m
+[0;32mI (1837) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1847) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1847) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1857) Display_clear: After Send data of For Loop[0m
+[0;32mI (1857) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1867) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1867) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1877) Display_clear: After Send data of For Loop[0m
+[0;32mI (1887) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1887) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1887) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1897) Display_clear: After Send data of For Loop[0m
+[0;32mI (1907) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1907) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1917) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1917) Display_clear: After Send data of For Loop[0m
+[0;32mI (1927) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1927) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1937) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1937) Display_clear: After Send data of For Loop[0m
+[0;32mI (1947) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1947) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1957) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1957) Display_clear: After Send data of For Loop[0m
+[0;32mI (1967) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1967) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1977) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1977) Display_clear: After Send data of For Loop[0m
+[0;32mI (1987) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (1987) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (1997) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (1997) Display_clear: After Send data of For Loop[0m
+[0;32mI (2007) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2007) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2017) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2017) Display_clear: After Send data of For Loop[0m
+[0;32mI (2027) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2027) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2037) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2037) Display_clear: After Send data of For Loop[0m
+[0;32mI (2047) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2047) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2057) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2057) Display_clear: After Send data of For Loop[0m
+[0;32mI (2067) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2067) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2077) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2077) Display_clear: After Send data of For Loop[0m
+[0;32mI (2087) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2087) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2097) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2097) Display_clear: After Send data of For Loop[0m
+[0;32mI (2107) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2107) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2117) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2117) Display_clear: After Send data of For Loop[0m
+[0;32mI (2127) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2127) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2137) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2137) Display_clear: After Send data of For Loop[0m
+[0;32mI (2147) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2157) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2157) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2167) Display_clear: After Send data of For Loop[0m
+[0;32mI (2167) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2177) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2177) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2187) Display_clear: After Send data of For Loop[0m
+[0;32mI (2187) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2197) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2197) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2207) Display_clear: After Send data of For Loop[0m
+[0;32mI (2207) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2217) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2217) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2227) Display_clear: After Send data of For Loop[0m
+[0;32mI (2227) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2237) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2237) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2247) Display_clear: After Send data of For Loop[0m
+[0;32mI (2247) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2257) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2257) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2267) Display_clear: After Send data of For Loop[0m
+[0;32mI (2267) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2277) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2277) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2287) Display_clear: After Send data of For Loop[0m
+[0;32mI (2287) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2297) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2297) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2307) Display_clear: After Send data of For Loop[0m
+[0;32mI (2307) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2317) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2317) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2327) Display_clear: After Send data of For Loop[0m
+[0;32mI (2327) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2337) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2337) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2347) Display_clear: After Send data of For Loop[0m
+[0;32mI (2347) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2357) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2357) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2367) Display_clear: After Send data of For Loop[0m
+[0;32mI (2367) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2377) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2377) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2387) Display_clear: After Send data of For Loop[0m
+[0;32mI (2397) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2397) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2397) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2407) Display_clear: After Send data of For Loop[0m
+[0;32mI (2417) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2417) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2427) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2427) Display_clear: After Send data of For Loop[0m
+[0;32mI (2437) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2437) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2447) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2447) Display_clear: After Send data of For Loop[0m
+[0;32mI (2457) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2457) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2467) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2467) Display_clear: After Send data of For Loop[0m
+[0;32mI (2477) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2477) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2487) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2487) Display_clear: After Send data of For Loop[0m
+[0;32mI (2497) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2497) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2507) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2507) Display_clear: After Send data of For Loop[0m
+[0;32mI (2517) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2517) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2527) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2527) Display_clear: After Send data of For Loop[0m
+[0;32mI (2537) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2537) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2547) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2547) Display_clear: After Send data of For Loop[0m
+[0;32mI (2557) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2557) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2567) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2567) Display_clear: After Send data of For Loop[0m
+[0;32mI (2577) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2577) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2587) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2587) Display_clear: After Send data of For Loop[0m
+[0;32mI (2597) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2597) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2607) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2607) Display_clear: After Send data of For Loop[0m
+[0;32mI (2617) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2617) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2627) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2627) Display_clear: After Send data of For Loop[0m
+[0;32mI (2637) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2637) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2647) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2647) Display_clear: After Send data of For Loop[0m
+[0;32mI (2657) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2667) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2667) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2677) Display_clear: After Send data of For Loop[0m
+[0;32mI (2677) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2687) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2687) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2697) Display_clear: After Send data of For Loop[0m
+[0;32mI (2697) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2707) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2707) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2717) Display_clear: After Send data of For Loop[0m
+[0;32mI (2717) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2727) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2727) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2737) Display_clear: After Send data of For Loop[0m
+[0;32mI (2737) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2747) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2747) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2757) Display_clear: After Send data of For Loop[0m
+[0;32mI (2757) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2767) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2767) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2777) Display_clear: After Send data of For Loop[0m
+[0;32mI (2777) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2787) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2787) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2797) Display_clear: After Send data of For Loop[0m
+[0;32mI (2797) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2807) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2807) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2817) Display_clear: After Send data of For Loop[0m
+[0;32mI (2817) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2827) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2827) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2837) Display_clear: After Send data of For Loop[0m
+[0;32mI (2837) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2847) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2847) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2857) Display_clear: After Send data of For Loop[0m
+[0;32mI (2857) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2867) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2867) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2877) Display_clear: After Send data of For Loop[0m
+[0;32mI (2877) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2887) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2887) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2897) Display_clear: After Send data of For Loop[0m
+[0;32mI (2907) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2907) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2907) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2917) Display_clear: After Send data of For Loop[0m
+[0;32mI (2927) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2927) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2937) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2937) Display_clear: After Send data of For Loop[0m
+[0;32mI (2947) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2947) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2957) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2957) Display_clear: After Send data of For Loop[0m
+[0;32mI (2967) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2967) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2977) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2977) Display_clear: After Send data of For Loop[0m
+[0;32mI (2987) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (2987) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (2997) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (2997) Display_clear: After Send data of For Loop[0m
+[0;32mI (3007) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3007) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3017) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3017) Display_clear: After Send data of For Loop[0m
+[0;32mI (3027) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3027) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3037) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3037) Display_clear: After Send data of For Loop[0m
+[0;32mI (3047) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3047) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3057) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3057) Display_clear: After Send data of For Loop[0m
+[0;32mI (3067) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3067) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3077) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3077) Display_clear: After Send data of For Loop[0m
+[0;32mI (3087) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3087) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3097) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3097) Display_clear: After Send data of For Loop[0m
+[0;32mI (3107) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3107) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3117) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3117) Display_clear: After Send data of For Loop[0m
+[0;32mI (3127) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3127) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3137) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3137) Display_clear: After Send data of For Loop[0m
+[0;32mI (3147) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3147) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3157) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3157) Display_clear: After Send data of For Loop[0m
+[0;32mI (3167) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3177) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3177) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3187) Display_clear: After Send data of For Loop[0m
+[0;32mI (3187) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3197) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3197) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3207) Display_clear: After Send data of For Loop[0m
+[0;32mI (3207) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3217) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3217) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3227) Display_clear: After Send data of For Loop[0m
+[0;32mI (3227) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3237) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3237) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3247) Display_clear: After Send data of For Loop[0m
+[0;32mI (3247) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3257) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3257) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3267) Display_clear: After Send data of For Loop[0m
+[0;32mI (3267) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3277) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3277) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3287) Display_clear: After Send data of For Loop[0m
+[0;32mI (3287) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3297) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3297) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3307) Display_clear: After Send data of For Loop[0m
+[0;32mI (3307) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3317) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3317) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3327) Display_clear: After Send data of For Loop[0m
+[0;32mI (3327) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3337) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3337) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3347) Display_clear: After Send data of For Loop[0m
+[0;32mI (3347) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3357) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3357) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3367) Display_clear: After Send data of For Loop[0m
+[0;32mI (3367) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3377) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3377) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3387) Display_clear: After Send data of For Loop[0m
+[0;32mI (3387) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3397) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3397) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3407) Display_clear: After Send data of For Loop[0m
+[0;32mI (3417) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3417) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3417) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3427) Display_clear: After Send data of For Loop[0m
+[0;32mI (3437) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3437) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3447) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3447) Display_clear: After Send data of For Loop[0m
+[0;32mI (3457) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3457) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3467) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3467) Display_clear: After Send data of For Loop[0m
+[0;32mI (3477) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3477) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3487) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3487) Display_clear: After Send data of For Loop[0m
+[0;32mI (3497) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3497) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3507) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3507) Display_clear: After Send data of For Loop[0m
+[0;32mI (3517) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3517) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3527) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3527) Display_clear: After Send data of For Loop[0m
+[0;32mI (3537) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3537) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3547) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3547) Display_clear: After Send data of For Loop[0m
+[0;32mI (3557) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3557) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3567) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3567) Display_clear: After Send data of For Loop[0m
+[0;32mI (3577) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3577) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3587) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3587) Display_clear: After Send data of For Loop[0m
+[0;32mI (3597) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3597) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3607) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3607) Display_clear: After Send data of For Loop[0m
+[0;32mI (3617) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3617) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3627) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3627) Display_clear: After Send data of For Loop[0m
+[0;32mI (3637) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3637) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3647) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3647) Display_clear: After Send data of For Loop[0m
+[0;32mI (3657) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3657) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3667) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3667) Display_clear: After Send data of For Loop[0m
+[0;32mI (3677) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3687) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3687) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3697) Display_clear: After Send data of For Loop[0m
+[0;32mI (3697) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3707) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3707) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3717) Display_clear: After Send data of For Loop[0m
+[0;32mI (3717) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3727) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3727) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3737) Display_clear: After Send data of For Loop[0m
+[0;32mI (3737) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3747) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3747) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3757) Display_clear: After Send data of For Loop[0m
+[0;32mI (3757) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3767) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3767) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3777) Display_clear: After Send data of For Loop[0m
+[0;32mI (3777) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3787) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3787) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3797) Display_clear: After Send data of For Loop[0m
+[0;32mI (3797) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3807) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3807) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3817) Display_clear: After Send data of For Loop[0m
+[0;32mI (3817) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3827) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3827) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3837) Display_clear: After Send data of For Loop[0m
+[0;32mI (3837) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3847) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3847) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3857) Display_clear: After Send data of For Loop[0m
+[0;32mI (3857) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3867) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3867) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3877) Display_clear: After Send data of For Loop[0m
+[0;32mI (3877) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3887) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3887) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3897) Display_clear: After Send data of For Loop[0m
+[0;32mI (3897) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3907) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3907) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3917) Display_clear: After Send data of For Loop[0m
+[0;32mI (3927) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3927) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3927) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3937) Display_clear: After Send data of For Loop[0m
+[0;32mI (3947) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3947) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3957) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3957) Display_clear: After Send data of For Loop[0m
+[0;32mI (3967) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3967) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3977) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3977) Display_clear: After Send data of For Loop[0m
+[0;32mI (3987) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (3987) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (3997) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (3997) Display_clear: After Send data of For Loop[0m
+[0;32mI (4007) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4007) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4017) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4017) Display_clear: After Send data of For Loop[0m
+[0;32mI (4027) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4027) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4037) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4037) Display_clear: After Send data of For Loop[0m
+[0;32mI (4047) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4047) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4057) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4057) Display_clear: After Send data of For Loop[0m
+[0;32mI (4067) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4067) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4077) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4077) Display_clear: After Send data of For Loop[0m
+[0;32mI (4087) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4087) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4097) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4097) Display_clear: After Send data of For Loop[0m
+[0;32mI (4107) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4107) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4117) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4117) Display_clear: After Send data of For Loop[0m
+[0;32mI (4127) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4127) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4137) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4137) Display_clear: After Send data of For Loop[0m
+[0;32mI (4147) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4147) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4157) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4157) Display_clear: After Send data of For Loop[0m
+[0;32mI (4167) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4167) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4177) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4177) Display_clear: After Send data of For Loop[0m
+[0;32mI (4187) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4197) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4197) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4207) Display_clear: After Send data of For Loop[0m
+[0;32mI (4207) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4217) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4217) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4227) Display_clear: After Send data of For Loop[0m
+[0;32mI (4227) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4237) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4237) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4247) Display_clear: After Send data of For Loop[0m
+[0;32mI (4247) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4257) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4257) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4267) Display_clear: After Send data of For Loop[0m
+[0;32mI (4267) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4277) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4277) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4287) Display_clear: After Send data of For Loop[0m
+[0;32mI (4287) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4297) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4297) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4307) Display_clear: After Send data of For Loop[0m
+[0;32mI (4307) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4317) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4317) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4327) Display_clear: After Send data of For Loop[0m
+[0;32mI (4327) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4337) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4337) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4347) Display_clear: After Send data of For Loop[0m
+[0;32mI (4347) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4357) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4357) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4367) Display_clear: After Send data of For Loop[0m
+[0;32mI (4367) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4377) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4377) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4387) Display_clear: After Send data of For Loop[0m
+[0;32mI (4387) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4397) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4397) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4407) Display_clear: After Send data of For Loop[0m
+[0;32mI (4407) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4417) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4417) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4427) Display_clear: After Send data of For Loop[0m
+[0;32mI (4437) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4437) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4437) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4447) Display_clear: After Send data of For Loop[0m
+[0;32mI (4457) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4457) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4467) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4467) Display_clear: After Send data of For Loop[0m
+[0;32mI (4477) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4477) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4487) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4487) Display_clear: After Send data of For Loop[0m
+[0;32mI (4497) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4497) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4507) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4507) Display_clear: After Send data of For Loop[0m
+[0;32mI (4517) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4517) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4527) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4527) Display_clear: After Send data of For Loop[0m
+[0;32mI (4537) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4537) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4547) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4547) Display_clear: After Send data of For Loop[0m
+[0;32mI (4557) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4557) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4567) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4567) Display_clear: After Send data of For Loop[0m
+[0;32mI (4577) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4577) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4587) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4587) Display_clear: After Send data of For Loop[0m
+[0;32mI (4597) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4597) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4607) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4607) Display_clear: After Send data of For Loop[0m
+[0;32mI (4617) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4617) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4627) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4627) Display_clear: After Send data of For Loop[0m
+[0;32mI (4637) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4637) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4647) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4647) Display_clear: After Send data of For Loop[0m
+[0;32mI (4657) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4657) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4667) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4667) Display_clear: After Send data of For Loop[0m
+[0;32mI (4677) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4677) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4687) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4687) Display_clear: After Send data of For Loop[0m
+[0;32mI (4697) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4707) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4707) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4717) Display_clear: After Send data of For Loop[0m
+[0;32mI (4717) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4727) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4727) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4737) Display_clear: After Send data of For Loop[0m
+[0;32mI (4737) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4747) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4747) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4757) Display_clear: After Send data of For Loop[0m
+[0;32mI (4757) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4767) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4767) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4777) Display_clear: After Send data of For Loop[0m
+[0;32mI (4777) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4787) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4787) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4797) Display_clear: After Send data of For Loop[0m
+[0;32mI (4797) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4807) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4807) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4817) Display_clear: After Send data of For Loop[0m
+[0;32mI (4817) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4827) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4827) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4837) Display_clear: After Send data of For Loop[0m
+[0;32mI (4837) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4847) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4847) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4857) Display_clear: After Send data of For Loop[0m
+[0;32mI (4857) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4867) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4867) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4877) Display_clear: After Send data of For Loop[0m
+[0;32mI (4877) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4887) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4887) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4897) Display_clear: After Send data of For Loop[0m
+[0;32mI (4897) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4907) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4907) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4917) Display_clear: After Send data of For Loop[0m
+[0;32mI (4917) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4927) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4927) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4937) Display_clear: After Send data of For Loop[0m
+[0;32mI (4947) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4947) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4947) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4957) Display_clear: After Send data of For Loop[0m
+[0;32mI (4967) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4967) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4977) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4977) Display_clear: After Send data of For Loop[0m
+[0;32mI (4987) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (4987) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (4997) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (4997) Display_clear: After Send data of For Loop[0m
+[0;32mI (5007) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5007) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5017) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5017) Display_clear: After Send data of For Loop[0m
+[0;32mI (5027) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5027) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5037) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5037) Display_clear: After Send data of For Loop[0m
+[0;32mI (5047) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5047) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5057) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5057) Display_clear: After Send data of For Loop[0m
+[0;32mI (5067) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5067) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5077) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5077) Display_clear: After Send data of For Loop[0m
+[0;32mI (5087) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5087) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5097) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5097) Display_clear: After Send data of For Loop[0m
+[0;32mI (5107) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5107) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5117) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5117) Display_clear: After Send data of For Loop[0m
+[0;32mI (5127) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5127) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5137) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5137) Display_clear: After Send data of For Loop[0m
+[0;32mI (5147) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5147) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5157) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5157) Display_clear: After Send data of For Loop[0m
+[0;32mI (5167) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5167) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5177) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5177) Display_clear: After Send data of For Loop[0m
+[0;32mI (5187) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5187) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5197) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5197) Display_clear: After Send data of For Loop[0m
+[0;32mI (5207) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5217) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5217) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5227) Display_clear: After Send data of For Loop[0m
+[0;32mI (5227) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5237) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5237) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5247) Display_clear: After Send data of For Loop[0m
+[0;32mI (5247) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5257) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5257) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5267) Display_clear: After Send data of For Loop[0m
+[0;32mI (5267) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5277) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5277) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5287) Display_clear: After Send data of For Loop[0m
+[0;32mI (5287) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5297) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5297) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5307) Display_clear: After Send data of For Loop[0m
+[0;32mI (5307) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5317) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5317) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5327) Display_clear: After Send data of For Loop[0m
+[0;32mI (5327) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5337) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5337) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5347) Display_clear: After Send data of For Loop[0m
+[0;32mI (5347) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5357) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5357) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5367) Display_clear: After Send data of For Loop[0m
+[0;32mI (5367) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5377) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5377) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5387) Display_clear: After Send data of For Loop[0m
+[0;32mI (5387) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5397) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5397) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5407) Display_clear: After Send data of For Loop[0m
+[0;32mI (5407) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5417) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5417) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5427) Display_clear: After Send data of For Loop[0m
+[0;32mI (5427) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5437) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5437) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5447) Display_clear: After Send data of For Loop[0m
+[0;32mI (5457) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5457) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5457) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5467) Display_clear: After Send data of For Loop[0m
+[0;32mI (5477) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5477) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5487) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5487) Display_clear: After Send data of For Loop[0m
+[0;32mI (5497) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5497) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5507) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5507) Display_clear: After Send data of For Loop[0m
+[0;32mI (5517) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5517) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5527) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5527) Display_clear: After Send data of For Loop[0m
+[0;32mI (5537) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5537) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5547) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5547) Display_clear: After Send data of For Loop[0m
+[0;32mI (5557) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5557) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5567) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5567) Display_clear: After Send data of For Loop[0m
+[0;32mI (5577) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5577) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5587) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5587) Display_clear: After Send data of For Loop[0m
+[0;32mI (5597) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5597) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5607) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5607) Display_clear: After Send data of For Loop[0m
+[0;32mI (5617) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5617) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5627) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5627) Display_clear: After Send data of For Loop[0m
+[0;32mI (5637) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5637) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5647) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5647) Display_clear: After Send data of For Loop[0m
+[0;32mI (5657) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5657) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5667) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5667) Display_clear: After Send data of For Loop[0m
+[0;32mI (5677) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5677) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5687) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5687) Display_clear: After Send data of For Loop[0m
+[0;32mI (5697) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5697) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5707) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5707) Display_clear: After Send data of For Loop[0m
+[0;32mI (5717) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5727) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5727) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5737) Display_clear: After Send data of For Loop[0m
+[0;32mI (5737) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5747) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5747) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5757) Display_clear: After Send data of For Loop[0m
+[0;32mI (5757) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5767) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5767) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5777) Display_clear: After Send data of For Loop[0m
+[0;32mI (5777) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5787) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5787) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5797) Display_clear: After Send data of For Loop[0m
+[0;32mI (5797) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5807) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5807) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5817) Display_clear: After Send data of For Loop[0m
+[0;32mI (5817) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5827) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5827) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5837) Display_clear: After Send data of For Loop[0m
+[0;32mI (5837) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5847) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5847) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5857) Display_clear: After Send data of For Loop[0m
+[0;32mI (5857) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5867) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5867) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5877) Display_clear: After Send data of For Loop[0m
+[0;32mI (5877) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5887) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5887) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5897) Display_clear: After Send data of For Loop[0m
+[0;32mI (5897) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5907) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5907) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5917) Display_clear: After Send data of For Loop[0m
+[0;32mI (5917) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5927) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5927) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5937) Display_clear: After Send data of For Loop[0m
+[0;32mI (5937) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5947) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5947) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5957) Display_clear: After Send data of For Loop[0m
+[0;32mI (5967) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5967) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5967) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5977) Display_clear: After Send data of For Loop[0m
+[0;32mI (5987) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (5987) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (5997) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (5997) Display_clear: After Send data of For Loop[0m
+[0;32mI (6007) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6007) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6017) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6017) Display_clear: After Send data of For Loop[0m
+[0;32mI (6027) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6027) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6037) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6037) Display_clear: After Send data of For Loop[0m
+[0;32mI (6047) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6047) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6057) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6057) Display_clear: After Send data of For Loop[0m
+[0;32mI (6067) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6067) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6077) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6077) Display_clear: After Send data of For Loop[0m
+[0;32mI (6087) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6087) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6097) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6097) Display_clear: After Send data of For Loop[0m
+[0;32mI (6107) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6107) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6117) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6117) Display_clear: After Send data of For Loop[0m
+[0;32mI (6127) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6127) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6137) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6137) Display_clear: After Send data of For Loop[0m
+[0;32mI (6147) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6147) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6157) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6157) Display_clear: After Send data of For Loop[0m
+[0;32mI (6167) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6167) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6177) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6177) Display_clear: After Send data of For Loop[0m
+[0;32mI (6187) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6187) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6197) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6197) Display_clear: After Send data of For Loop[0m
+[0;32mI (6207) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6207) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6217) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6217) Display_clear: After Send data of For Loop[0m
+[0;32mI (6227) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6237) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6237) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6247) Display_clear: After Send data of For Loop[0m
+[0;32mI (6247) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6257) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6257) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6267) Display_clear: After Send data of For Loop[0m
+[0;32mI (6267) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6277) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6277) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6287) Display_clear: After Send data of For Loop[0m
+[0;32mI (6287) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6297) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6297) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6307) Display_clear: After Send data of For Loop[0m
+[0;32mI (6307) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6317) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6317) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6327) Display_clear: After Send data of For Loop[0m
+[0;32mI (6327) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6337) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6337) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6347) Display_clear: After Send data of For Loop[0m
+[0;32mI (6347) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6357) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6357) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6367) Display_clear: After Send data of For Loop[0m
+[0;32mI (6367) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6377) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6377) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6387) Display_clear: After Send data of For Loop[0m
+[0;32mI (6387) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6397) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6397) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6407) Display_clear: After Send data of For Loop[0m
+[0;32mI (6407) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6417) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6417) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6427) Display_clear: After Send data of For Loop[0m
+[0;32mI (6427) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6437) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6437) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6447) Display_clear: After Send data of For Loop[0m
+[0;32mI (6447) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6457) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6457) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6467) Display_clear: After Send data of For Loop[0m
+[0;32mI (6477) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6477) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[[0;31mE (6477) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (6477) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (6477) task_wdt: Tasks currently running:[0m
+[0;31mE (6477) task_wdt: CPU 0: main[0m
+[0;31mE (6477) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (6477) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D93C7:0x3FFB0DB0 0x400D9794:0x3FFB0DD0 0x40082A41:0x3FFB0E00 0x400D50A1:0x3FFB4860 0x400D586F:0x3FFB4890 0x400D46DB:0x3FFB48B0 0x400D42A2:0x3FFB48D0 0x4000BD83:0x3FFB48F0 0x4000117D:0x3FFB4910 0x400592FE:0x3FFB4930 0x4005937A:0x3FFB4950 0x400DB23F:0x3FFB4970 0x400E2FDB:0x3FFB49A0 0x400DEBD6:0x3FFB49C0 0x400DED41:0x3FFB4CE0 0x400E6455:0x3FFB4D10 0x4008B991:0x3FFB4D40 0x400D59BB:0x3FFB4D90 0x400D5C7B:0x3FFB4DF0 0x400D589C:0x3FFB4E10 0x400E5C7C:0x3FFB4E40 0x400881D1:0x3FFB4E70
+
+0;32mI (6477) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6567) Display_clear: After Send data of For Loop[0m
+[0;32mI (6567) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6577) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6577) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6587) Display_clear: After Send data of For Loop[0m
+[0;32mI (6587) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6597) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6597) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6607) Display_clear: After Send data of For Loop[0m
+[0;32mI (6607) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6617) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6617) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6627) Display_clear: After Send data of For Loop[0m
+[0;32mI (6627) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6637) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6637) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6647) Display_clear: After Send data of For Loop[0m
+[0;32mI (6647) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6657) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6657) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6667) Display_clear: After Send data of For Loop[0m
+[0;32mI (6667) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6677) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6677) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6687) Display_clear: After Send data of For Loop[0m
+[0;32mI (6687) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6697) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6697) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6707) Display_clear: After Send data of For Loop[0m
+[0;32mI (6707) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6717) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6717) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6727) Display_clear: After Send data of For Loop[0m
+[0;32mI (6737) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6737) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6737) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6747) Display_clear: After Send data of For Loop[0m
+[0;32mI (6757) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6757) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6767) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6767) Display_clear: After Send data of For Loop[0m
+[0;32mI (6777) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6777) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6787) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6787) Display_clear: After Send data of For Loop[0m
+[0;32mI (6797) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6797) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6807) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6807) Display_clear: After Send data of For Loop[0m
+[0;32mI (6817) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6817) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6827) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6827) Display_clear: After Send data of For Loop[0m
+[0;32mI (6837) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6837) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6847) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6847) Display_clear: After Send data of For Loop[0m
+[0;32mI (6857) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6857) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6867) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6867) Display_clear: After Send data of For Loop[0m
+[0;32mI (6877) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6877) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6887) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6887) Display_clear: After Send data of For Loop[0m
+[0;32mI (6897) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6897) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6907) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6907) Display_clear: After Send data of For Loop[0m
+[0;32mI (6917) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6917) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6927) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6927) Display_clear: After Send data of For Loop[0m
+[0;32mI (6937) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6937) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6947) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6947) Display_clear: After Send data of For Loop[0m
+[0;32mI (6957) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6957) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6967) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6967) Display_clear: After Send data of For Loop[0m
+[0;32mI (6977) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (6977) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (6987) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (6987) Display_clear: After Send data of For Loop[0m
+[0;32mI (6997) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7007) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7007) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7017) Display_clear: After Send data of For Loop[0m
+[0;32mI (7017) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7027) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7027) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7037) Display_clear: After Send data of For Loop[0m
+[0;32mI (7037) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7047) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7047) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7057) Display_clear: After Send data of For Loop[0m
+[0;32mI (7057) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7067) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7067) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7077) Display_clear: After Send data of For Loop[0m
+[0;32mI (7077) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7087) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7087) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7097) Display_clear: After Send data of For Loop[0m
+[0;32mI (7097) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7107) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7107) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7117) Display_clear: After Send data of For Loop[0m
+[0;32mI (7117) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7127) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7127) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7137) Display_clear: After Send data of For Loop[0m
+[0;32mI (7137) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7147) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7147) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7157) Display_clear: After Send data of For Loop[0m
+[0;32mI (7157) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7167) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7167) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7177) Display_clear: After Send data of For Loop[0m
+[0;32mI (7177) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7187) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7187) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7197) Display_clear: After Send data of For Loop[0m
+[0;32mI (7197) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7207) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7207) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7217) Display_clear: After Send data of For Loop[0m
+[0;32mI (7217) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7227) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7227) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7237) Display_clear: After Send data of For Loop[0m
+[0;32mI (7247) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7247) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7247) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7257) Display_clear: After Send data of For Loop[0m
+[0;32mI (7267) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7267) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7277) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7277) Display_clear: After Send data of For Loop[0m
+[0;32mI (7287) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7287) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7297) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7297) Display_clear: After Send data of For Loop[0m
+[0;32mI (7307) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7307) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7317) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7317) Display_clear: After Send data of For Loop[0m
+[0;32mI (7327) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7327) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7337) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7337) Display_clear: After Send data of For Loop[0m
+[0;32mI (7347) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7347) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7357) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7357) Display_clear: After Send data of For Loop[0m
+[0;32mI (7367) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7367) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7377) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7377) Display_clear: After Send data of For Loop[0m
+[0;32mI (7387) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7387) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7397) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7397) Display_clear: After Send data of For Loop[0m
+[0;32mI (7407) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7407) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7417) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7417) Display_clear: After Send data of For Loop[0m
+[0;32mI (7427) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7427) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7437) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7437) Display_clear: After Send data of For Loop[0m
+[0;32mI (7447) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7447) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7457) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7457) Display_clear: After Send data of For Loop[0m
+[0;32mI (7467) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7467) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7477) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7477) Display_clear: After Send data of For Loop[0m
+[0;32mI (7487) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7487) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7497) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7497) Display_clear: After Send data of For Loop[0m
+[0;32mI (7507) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7517) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7517) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7527) Display_clear: After Send data of For Loop[0m
+[0;32mI (7527) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7537) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7537) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7547) Display_clear: After Send data of For Loop[0m
+[0;32mI (7547) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7557) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7557) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7567) Display_clear: After Send data of For Loop[0m
+[0;32mI (7567) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7577) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7577) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7587) Display_clear: After Send data of For Loop[0m
+[0;32mI (7587) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7597) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7597) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7607) Display_clear: After Send data of For Loop[0m
+[0;32mI (7607) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7617) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7617) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7627) Display_clear: After Send data of For Loop[0m
+[0;32mI (7627) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7637) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7637) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7647) Display_clear: After Send data of For Loop[0m
+[0;32mI (7647) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7657) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7657) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7667) Display_clear: After Send data of For Loop[0m
+[0;32mI (7667) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7677) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7677) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7687) Display_clear: After Send data of For Loop[0m
+[0;32mI (7687) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7697) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7697) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7707) Display_clear: After Send data of For Loop[0m
+[0;32mI (7707) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7717) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7717) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7727) Display_clear: After Send data of For Loop[0m
+[0;32mI (7727) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7737) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7737) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7747) Display_clear: After Send data of For Loop[0m
+[0;32mI (7757) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7757) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7757) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7767) Display_clear: After Send data of For Loop[0m
+[0;32mI (7777) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7777) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7787) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7787) Display_clear: After Send data of For Loop[0m
+[0;32mI (7797) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7797) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7807) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7807) Display_clear: After Send data of For Loop[0m
+[0;32mI (7817) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7817) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7827) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7827) Display_clear: After Send data of For Loop[0m
+[0;32mI (7837) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7837) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7847) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7847) Display_clear: After Send data of For Loop[0m
+[0;32mI (7857) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7857) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7867) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7867) Display_clear: After Send data of For Loop[0m
+[0;32mI (7877) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7877) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7887) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7887) Display_clear: After Send data of For Loop[0m
+[0;32mI (7897) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7897) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7907) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7907) Display_clear: After Send data of For Loop[0m
+[0;32mI (7917) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7917) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7927) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7927) Display_clear: After Send data of For Loop[0m
+[0;32mI (7937) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7937) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7947) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7947) Display_clear: After Send data of For Loop[0m
+[0;32mI (7957) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7957) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7967) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7967) Display_clear: After Send data of For Loop[0m
+[0;32mI (7977) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7977) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (7987) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (7987) Display_clear: After Send data of For Loop[0m
+[0;32mI (7997) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (7997) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8007) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8007) Display_clear: After Send data of For Loop[0m
+[0;32mI (8017) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8027) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8027) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8037) Display_clear: After Send data of For Loop[0m
+[0;32mI (8037) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8047) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8047) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8057) Display_clear: After Send data of For Loop[0m
+[0;32mI (8057) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8067) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8067) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8077) Display_clear: After Send data of For Loop[0m
+[0;32mI (8077) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8087) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8087) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8097) Display_clear: After Send data of For Loop[0m
+[0;32mI (8097) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8107) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8107) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8117) Display_clear: After Send data of For Loop[0m
+[0;32mI (8117) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8127) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8127) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8137) Display_clear: After Send data of For Loop[0m
+[0;32mI (8137) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8147) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8147) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8157) Display_clear: After Send data of For Loop[0m
+[0;32mI (8157) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8167) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8167) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8177) Display_clear: After Send data of For Loop[0m
+[0;32mI (8177) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8187) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8187) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8197) Display_clear: After Send data of For Loop[0m
+[0;32mI (8197) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8207) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8207) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8217) Display_clear: After Send data of For Loop[0m
+[0;32mI (8217) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8227) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8227) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8237) Display_clear: After Send data of For Loop[0m
+[0;32mI (8237) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8247) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8247) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8257) Display_clear: After Send data of For Loop[0m
+[0;32mI (8267) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8267) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8267) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8277) Display_clear: After Send data of For Loop[0m
+[0;32mI (8287) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8287) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8297) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8297) Display_clear: After Send data of For Loop[0m
+[0;32mI (8307) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8307) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8317) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8317) Display_clear: After Send data of For Loop[0m
+[0;32mI (8327) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8327) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8337) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8337) Display_clear: After Send data of For Loop[0m
+[0;32mI (8347) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8347) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8357) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8357) Display_clear: After Send data of For Loop[0m
+[0;32mI (8367) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8367) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8377) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8377) Display_clear: After Send data of For Loop[0m
+[0;32mI (8387) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8387) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8397) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8397) Display_clear: After Send data of For Loop[0m
+[0;32mI (8407) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8407) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8417) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8417) Display_clear: After Send data of For Loop[0m
+[0;32mI (8427) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8427) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8437) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8437) Display_clear: After Send data of For Loop[0m
+[0;32mI (8447) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8447) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8457) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8457) Display_clear: After Send data of For Loop[0m
+[0;32mI (8467) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8467) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8477) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8477) Display_clear: After Send data of For Loop[0m
+[0;32mI (8487) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8487) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8497) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8497) Display_clear: After Send data of For Loop[0m
+[0;32mI (8507) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8507) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8517) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8517) Display_clear: After Send data of For Loop[0m
+[0;32mI (8527) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8537) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8537) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8547) Display_clear: After Send data of For Loop[0m
+[0;32mI (8547) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8557) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8557) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8567) Display_clear: After Send data of For Loop[0m
+[0;32mI (8567) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8577) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8577) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8587) Display_clear: After Send data of For Loop[0m
+[0;32mI (8587) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8597) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8597) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8607) Display_clear: After Send data of For Loop[0m
+[0;32mI (8607) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8617) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8617) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8627) Display_clear: After Send data of For Loop[0m
+[0;32mI (8627) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8637) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8637) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8647) Display_clear: After Send data of For Loop[0m
+[0;32mI (8647) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8657) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8657) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8667) Display_clear: After Send data of For Loop[0m
+[0;32mI (8667) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8677) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8677) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8687) Display_clear: After Send data of For Loop[0m
+[0;32mI (8687) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8697) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8697) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8707) Display_clear: After Send data of For Loop[0m
+[0;32mI (8707) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8717) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8717) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8727) Display_clear: After Send data of For Loop[0m
+[0;32mI (8727) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8737) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8737) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8747) Display_clear: After Send data of For Loop[0m
+[0;32mI (8747) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8757) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8757) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8767) Display_clear: After Send data of For Loop[0m
+[0;32mI (8777) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8777) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8777) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8787) Display_clear: After Send data of For Loop[0m
+[0;32mI (8797) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8797) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8807) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8807) Display_clear: After Send data of For Loop[0m
+[0;32mI (8817) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8817) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8827) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8827) Display_clear: After Send data of For Loop[0m
+[0;32mI (8837) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8837) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8847) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8847) Display_clear: After Send data of For Loop[0m
+[0;32mI (8857) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8857) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8867) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8867) Display_clear: After Send data of For Loop[0m
+[0;32mI (8877) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8877) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8887) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8887) Display_clear: After Send data of For Loop[0m
+[0;32mI (8897) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8897) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8907) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8907) Display_clear: After Send data of For Loop[0m
+[0;32mI (8917) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8917) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8927) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8927) Display_clear: After Send data of For Loop[0m
+[0;32mI (8937) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8937) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8947) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8947) Display_clear: After Send data of For Loop[0m
+[0;32mI (8957) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8957) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8967) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8967) Display_clear: After Send data of For Loop[0m
+[0;32mI (8977) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8977) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (8987) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (8987) Display_clear: After Send data of For Loop[0m
+[0;32mI (8997) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (8997) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9007) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9007) Display_clear: After Send data of For Loop[0m
+[0;32mI (9017) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9017) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9027) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9027) Display_clear: After Send data of For Loop[0m
+[0;32mI (9037) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9047) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9047) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9057) Display_clear: After Send data of For Loop[0m
+[0;32mI (9057) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9067) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9067) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9077) Display_clear: After Send data of For Loop[0m
+[0;32mI (9077) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9087) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9087) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9097) Display_clear: After Send data of For Loop[0m
+[0;32mI (9097) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9107) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9107) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9117) Display_clear: After Send data of For Loop[0m
+[0;32mI (9117) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9127) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9127) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9137) Display_clear: After Send data of For Loop[0m
+[0;32mI (9137) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9147) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9147) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9157) Display_clear: After Send data of For Loop[0m
+[0;32mI (9157) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9167) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9167) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9177) Display_clear: After Send data of For Loop[0m
+[0;32mI (9177) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9187) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9187) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9197) Display_clear: After Send data of For Loop[0m
+[0;32mI (9197) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9207) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9207) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9217) Display_clear: After Send data of For Loop[0m
+[0;32mI (9217) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9227) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9227) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9237) Display_clear: After Send data of For Loop[0m
+[0;32mI (9237) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9247) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9247) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9257) Display_clear: After Send data of For Loop[0m
+[0;32mI (9257) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9267) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9267) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9277) Display_clear: After Send data of For Loop[0m
+[0;32mI (9287) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9287) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9287) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9297) Display_clear: After Send data of For Loop[0m
+[0;32mI (9307) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9307) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9317) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9317) Display_clear: After Send data of For Loop[0m
+[0;32mI (9327) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9327) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9337) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9337) Display_clear: After Send data of For Loop[0m
+[0;32mI (9347) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9347) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9357) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9357) Display_clear: After Send data of For Loop[0m
+[0;32mI (9367) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9367) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9377) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9377) Display_clear: After Send data of For Loop[0m
+[0;32mI (9387) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9387) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9397) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9397) Display_clear: After Send data of For Loop[0m
+[0;32mI (9407) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9407) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9417) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9417) Display_clear: After Send data of For Loop[0m
+[0;32mI (9427) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9427) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9437) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9437) Display_clear: After Send data of For Loop[0m
+[0;32mI (9447) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9447) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9457) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9457) Display_clear: After Send data of For Loop[0m
+[0;32mI (9467) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9467) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9477) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9477) Display_clear: After Send data of For Loop[0m
+[0;32mI (9487) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9487) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9497) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9497) Display_clear: After Send data of For Loop[0m
+[0;32mI (9507) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9507) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9517) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9517) Display_clear: After Send data of For Loop[0m
+[0;32mI (9527) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9527) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9537) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9537) Display_clear: After Send data of For Loop[0m
+[0;32mI (9547) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9557) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9557) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9567) Display_clear: After Send data of For Loop[0m
+[0;32mI (9567) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9577) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9577) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9587) Display_clear: After Send data of For Loop[0m
+[0;32mI (9587) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9597) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9597) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9607) Display_clear: After Send data of For Loop[0m
+[0;32mI (9607) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9617) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9617) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9627) Display_clear: After Send data of For Loop[0m
+[0;32mI (9627) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9637) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9637) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9647) Display_clear: After Send data of For Loop[0m
+[0;32mI (9647) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9657) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9657) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9667) Display_clear: After Send data of For Loop[0m
+[0;32mI (9667) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9677) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9677) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9687) Display_clear: After Send data of For Loop[0m
+[0;32mI (9687) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9697) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9697) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9707) Display_clear: After Send data of For Loop[0m
+[0;32mI (9707) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9717) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9717) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9727) Display_clear: After Send data of For Loop[0m
+[0;32mI (9727) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9737) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9737) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9747) Display_clear: After Send data of For Loop[0m
+[0;32mI (9747) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9757) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9757) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9767) Display_clear: After Send data of For Loop[0m
+[0;32mI (9767) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9777) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9777) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9787) Display_clear: After Send data of For Loop[0m
+[0;32mI (9797) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9797) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9797) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9807) Display_clear: After Send data of For Loop[0m
+[0;32mI (9817) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9817) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9827) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9827) Display_clear: After Send data of For Loop[0m
+[0;32mI (9837) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9837) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9847) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9847) Display_clear: After Send data of For Loop[0m
+[0;32mI (9857) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9857) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9867) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9867) Display_clear: After Send data of For Loop[0m
+[0;32mI (9877) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9877) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9887) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9887) Display_clear: After Send data of For Loop[0m
+[0;32mI (9897) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9897) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9907) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9907) Display_clear: After Send data of For Loop[0m
+[0;32mI (9917) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9917) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9927) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9927) Display_clear: After Send data of For Loop[0m
+[0;32mI (9937) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9937) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9947) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9947) Display_clear: After Send data of For Loop[0m
+[0;32mI (9957) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9957) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9967) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9967) Display_clear: After Send data of For Loop[0m
+[0;32mI (9977) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9977) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (9987) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (9987) Display_clear: After Send data of For Loop[0m
+[0;32mI (9997) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (9997) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10007) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10007) Display_clear: After Send data of For Loop[0m
+[0;32mI (10017) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10017) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10027) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10027) Display_clear: After Send data of For Loop[0m
+[0;32mI (10037) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10047) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10047) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10057) Display_clear: After Send data of For Loop[0m
+[0;32mI (10057) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10067) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10067) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10077) Display_clear: After Send data of For Loop[0m
+[0;32mI (10077) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10087) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10087) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10097) Display_clear: After Send data of For Loop[0m
+[0;32mI (10097) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10107) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10107) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10117) Display_clear: After Send data of For Loop[0m
+[0;32mI (10117) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10127) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10127) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10137) Display_clear: After Send data of For Loop[0m
+[0;32mI (10137) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10147) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10147) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10157) Display_clear: After Send data of For Loop[0m
+[0;32mI (10157) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10167) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10167) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10177) Display_clear: After Send data of For Loop[0m
+[0;32mI (10187) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10187) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10197) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10197) Display_clear: After Send data of For Loop[0m
+[0;32mI (10207) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10207) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10217) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10217) Display_clear: After Send data of For Loop[0m
+[0;32mI (10227) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10227) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10237) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10237) Display_clear: After Send data of For Loop[0m
+[0;32mI (10247) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10247) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10257) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10257) Display_clear: After Send data of For Loop[0m
+[0;32mI (10267) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10267) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10277) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10277) Display_clear: After Send data of For Loop[0m
+[0;32mI (10287) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10287) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10297) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10297) Display_clear: After Send data of For Loop[0m
+[0;32mI (10307) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10317) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10317) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10327) Display_clear: After Send data of For Loop[0m
+[0;32mI (10327) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10337) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10337) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10347) Display_clear: After Send data of For Loop[0m
+[0;32mI (10347) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10357) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10357) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10367) Display_clear: After Send data of For Loop[0m
+[0;32mI (10367) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10377) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10377) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10387) Display_clear: After Send data of For Loop[0m
+[0;32mI (10387) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10397) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10397) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10407) Display_clear: After Send data of For Loop[0m
+[0;32mI (10407) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10417) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10417) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10427) Display_clear: After Send data of For Loop[0m
+[0;32mI (10427) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10437) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10437) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10447) Display_clear: After Send data of For Loop[0m
+[0;32mI (10457) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10457) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10467) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10467) Display_clear: After Send data of For Loop[0m
+[0;32mI (10477) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10477) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10487) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10487) Display_clear: After Send data of For Loop[0m
+[0;32mI (10497) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10497) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10507) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10507) Display_clear: After Send data of For Loop[0m
+[0;32mI (10517) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10517) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10527) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10527) Display_clear: After Send data of For Loop[0m
+[0;32mI (10537) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10537) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10547) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10547) Display_clear: After Send data of For Loop[0m
+[0;32mI (10557) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10557) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10567) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10567) Display_clear: After Send data of For Loop[0m
+[0;32mI (10577) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10577) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10587) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10587) Display_clear: After Send data of For Loop[0m
+[0;32mI (10597) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10607) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10607) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10617) Display_clear: After Send data of For Loop[0m
+[0;32mI (10617) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10627) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10627) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10637) Display_clear: After Send data of For Loop[0m
+[0;32mI (10637) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10647) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10647) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10657) Display_clear: After Send data of For Loop[0m
+[0;32mI (10657) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10667) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10667) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10677) Display_clear: After Send data of For Loop[0m
+[0;32mI (10677) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10687) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10687) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10697) Display_clear: After Send data of For Loop[0m
+[0;32mI (10697) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10707) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10707) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10717) Display_clear: After Send data of For Loop[0m
+[0;32mI (10727) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10727) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10727) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10737) Display_clear: After Send data of For Loop[0m
+[0;32mI (10747) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10747) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10757) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10757) Display_clear: After Send data of For Loop[0m
+[0;32mI (10767) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10767) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10777) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10777) Display_clear: After Send data of For Loop[0m
+[0;32mI (10787) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10787) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10797) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10797) Display_clear: After Send data of For Loop[0m
+[0;32mI (10807) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10807) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10817) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10817) Display_clear: After Send data of For Loop[0m
+[0;32mI (10827) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10827) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10837) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10837) Display_clear: After Send data of For Loop[0m
+[0;32mI (10847) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10847) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10857) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10857) Display_clear: After Send data of For Loop[0m
+[0;32mI (10867) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10877) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10877) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10887) Display_clear: After Send data of For Loop[0m
+[0;32mI (10887) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10897) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10897) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10907) Display_clear: After Send data of For Loop[0m
+[0;32mI (10907) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10917) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10917) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10927) Display_clear: After Send data of For Loop[0m
+[0;32mI (10927) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10937) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10937) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10947) Display_clear: After Send data of For Loop[0m
+[0;32mI (10947) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10957) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10957) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10967) Display_clear: After Send data of For Loop[0m
+[0;32mI (10967) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10977) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10977) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (10987) Display_clear: After Send data of For Loop[0m
+[0;32mI (10987) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (10997) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (10997) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11007) Display_clear: After Send data of For Loop[0m
+[0;32mI (11017) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11017) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11027) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11027) Display_clear: After Send data of For Loop[0m
+[0;32mI (11037) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11037) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11047) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11047) Display_clear: After Send data of For Loop[0m
+[0;32mI (11057) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11057) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11067) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11067) Display_clear: After Send data of For Loop[0m
+[0;32mI (11077) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11077) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11087) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11087) Display_clear: After Send data of For Loop[0m
+[0;32mI (11097) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11097) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11107) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11107) Display_clear: After Send data of For Loop[0m
+[0;32mI (11117) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11117) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11127) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11127) Display_clear: After Send data of For Loop[0m
+[0;32mI (11137) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11137) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11147) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11157) Display_clear: After Send data of For Loop[0m
+[0;32mI (11157) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11167) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11167) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11177) Display_clear: After Send data of For Loop[0m
+[0;32mI (11177) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11187) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11187) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11197) Display_clear: After Send data of For Loop[0m
+[0;32mI (11197) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11207) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11207) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11217) Display_clear: After Send data of For Loop[0m
+[0;32mI (11217) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11227) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11227) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11237) Display_clear: After Send data of For Loop[0m
+[0;32mI (11237) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11247) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11247) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11257) Display_clear: After Send data of For Loop[0m
+[0;32mI (11257) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11267) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11267) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11277) Display_clear: After Send data of For Loop[0m
+[0;32mI (11287) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11287) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11297) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11297) Display_clear: After Send data of For Loop[0m
+[0;32mI (11307) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11307) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11317) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11317) Display_clear: After Send data of For Loop[0m
+[0;32mI (11327) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11327) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11337) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11337) Display_clear: After Send data of For Loop[0m
+[0;32mI (11347) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11347) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11357) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11357) Display_clear: After Send data of For Loop[0m
+[0;32mI (11367) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11367) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11377) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11377) Display_clear: After Send data of For Loop[0m
+[0;32mI (11387) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11387) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11397) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11397) Display_clear: After Send data of For Loop[0m
+[0;32mI (11407) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11407) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11417) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11417) Display_clear: After Send data of For Loop[0m
+[0;32mI (11427) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11437) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11437) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11447) Display_clear: After Send data of For Loop[0m
+[0;32mI (11447) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11457) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11457) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11467) Display_clear: After Send data of For Loop[0m
+[0;32mI (11467) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11477) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11477) DISPLAY: SPI devic[0;31mE (11477) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (11477) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (11477) task_wdt: Tasks currently running:[0m
+[0;31mE (11477) task_wdt: CPU 0: main[0m
+[0;31mE (11477) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (11477) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400D93C7:0x3FFB0DB0 0x400D9794:0x3FFB0DD0 0x40082A41:0x3FFB0E00 0x400D50AB:0x3FFB4860 0x400D586F:0x3FFB4890 0x400D46DB:0x3FFB48B0 0x400D42A2:0x3FFB48D0 0x4000BD83:0x3FFB48F0 0x4000117D:0x3FFB4910 0x400592FE:0x3FFB4930 0x4005937A:0x3FFB4950 0x400DB23F:0x3FFB4970 0x400E2FDB:0x3FFB49A0 0x400DEBD6:0x3FFB49C0 0x400DED41:0x3FFB4CE0 0x400E6455:0x3FFB4D10 0x4008B991:0x3FFB4D40 0x400D59BB:0x3FFB4D90 0x400D5C7B:0x3FFB4DF0 0x400D589C:0x3FFB4E10 0x400E5C7C:0x3FFB4E40 0x400881D1:0x3FFB4E70
+
+e handle: 0x3ffb4e10[0m
+[0;33mW (11557) Display_clear: After Send data of For Loop[0m
+[0;32mI (11567) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11567) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11577) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11577) Display_clear: After Send data of For Loop[0m
+[0;32mI (11587) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11597) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11597) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11607) Display_clear: After Send data of For Loop[0m
+[0;32mI (11607) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11617) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11617) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11627) Display_clear: After Send data of For Loop[0m
+[0;32mI (11627) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11637) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11637) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11647) Display_clear: After Send data of For Loop[0m
+[0;32mI (11647) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11657) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11657) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11667) Display_clear: After Send data of For Loop[0m
+[0;32mI (11667) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11677) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11677) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11687) Display_clear: After Send data of For Loop[0m
+[0;32mI (11687) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11697) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11697) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11707) Display_clear: After Send data of For Loop[0m
+[0;32mI (11717) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11717) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11717) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11727) Display_clear: After Send data of For Loop[0m
+[0;32mI (11737) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11737) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11747) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11747) Display_clear: After Send data of For Loop[0m
+[0;32mI (11757) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11757) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11767) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11767) Display_clear: After Send data of For Loop[0m
+[0;32mI (11777) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11777) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11787) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11787) Display_clear: After Send data of For Loop[0m
+[0;32mI (11797) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11797) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11807) DISPLAY: SPI device handle: 0x3ffb4e10[0m
+[0;33mW (11807) Display_clear: After Send data of For Loop[0m
+[0;32mI (11817) DISPLAY: EPD_DC_PIN level Data : 0[0m
+[0;32mI (11817) DISPLAY: EPD_CS_PIN level Data: 1[0m
+[0;32mI (11827) DISPLAY: SPI device handle: 0x3ffb4e10[0m

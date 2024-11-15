@@ -1,0 +1,23 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM16 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM16 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400811ec: call_start_cpu1 at C:/esp/esp-idf/v5.1.5/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m--- 0x400d5a86: display_init at C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:428 (discriminator 1)
+[0m
+[0;33m--- 0x400867a3: _esp_error_check_failed at C:/esp/esp-idf/v5.1.5/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- 0x400817fa: panic_abort at C:/esp/esp-idf/v5.1.5/esp-idf/components/esp_system/panic.c:466
+0x400867ad: esp_system_abort at C:/esp/esp-idf/v5.1.5/esp-idf/components/esp_system/port/esp_system_chip.c:84
+0x4008c422: abort at C:/esp/esp-idf/v5.1.5/esp-idf/components/newlib/abort.c:38
+0x400867a3: _esp_error_check_failed at C:/esp/esp-idf/v5.1.5/esp-idf/components/esp_system/esp_err.c:50
+0x400d5a86: display_init at C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:428 (discriminator 1)
+0x400d5baa: display_clear at C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:496
+0x400d58b4: app_main at C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/main.c:13
+0x400e67b8: main_task at C:/esp/esp-idf/v5.1.5/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+0x40088b15: vPortTaskWrapper at C:/esp/esp-idf/v5.1.5/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0m

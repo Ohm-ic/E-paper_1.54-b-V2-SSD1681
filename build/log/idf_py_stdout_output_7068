@@ -1,0 +1,211 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\SYSTEM32\cmd.exe /C "cd /D C:\Users\hario\OneDrive\Desktop\EPDTEST2\build\bootloader\esp-idf\esptool_py && c:\esp\tools\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/esp/esp-idf/v5.1.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/hario/OneDrive/Desktop/EPDTEST2/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[5/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/epd.c.obj
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c: In function 'display_init':
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:87:18: warning: passing argument 1 of 'send_command' from incompatible pointer type [-Wincompatible-pointer-types]
+   87 |     send_command(spi, 0x12);  // Soft reset
+      |                  ^~~
+      |                  |
+      |                  struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:15:46: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   15 | static void send_command(spi_device_handle_t spi, uint8_t cmd) {
+      |                          ~~~~~~~~~~~~~~~~~~~~^~~
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:90:18: warning: passing argument 1 of 'send_command' from incompatible pointer type [-Wincompatible-pointer-types]
+   90 |     send_command(spi, 0x01);// Driver Output Control
+      |                  ^~~
+      |                  |
+      |                  struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:15:46: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   15 | static void send_command(spi_device_handle_t spi, uint8_t cmd) {
+      |                          ~~~~~~~~~~~~~~~~~~~~^~~
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:91:15: warning: passing argument 1 of 'send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+   91 |     send_data(spi, 0xC7);
+      |               ^~~
+      |               |
+      |               struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:28:43: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   28 | static void send_data(spi_device_handle_t spi, uint8_t data) {
+      |                       ~~~~~~~~~~~~~~~~~~~~^~~
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:92:15: warning: passing argument 1 of 'send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+   92 |     send_data(spi, 0x00);
+      |               ^~~
+      |               |
+      |               struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:28:43: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   28 | static void send_data(spi_device_handle_t spi, uint8_t data) {
+      |                       ~~~~~~~~~~~~~~~~~~~~^~~
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:93:15: warning: passing argument 1 of 'send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+   93 |     send_data(spi, 0x01);
+      |               ^~~
+      |               |
+      |               struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:28:43: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   28 | static void send_data(spi_device_handle_t spi, uint8_t data) {
+      |                       ~~~~~~~~~~~~~~~~~~~~^~~
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:95:18: warning: passing argument 1 of 'send_command' from incompatible pointer type [-Wincompatible-pointer-types]
+   95 |     send_command(spi, 0x11); // Data Entry Mode
+      |                  ^~~
+      |                  |
+      |                  struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:15:46: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   15 | static void send_command(spi_device_handle_t spi, uint8_t cmd) {
+      |                          ~~~~~~~~~~~~~~~~~~~~^~~
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:96:15: warning: passing argument 1 of 'send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+   96 |     send_data(spi, 0x01);
+      |               ^~~
+      |               |
+      |               struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:28:43: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   28 | static void send_data(spi_device_handle_t spi, uint8_t data) {
+      |                       ~~~~~~~~~~~~~~~~~~~~^~~
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:98:18: warning: passing argument 1 of 'send_command' from incompatible pointer type [-Wincompatible-pointer-types]
+   98 |     send_command(spi, 0x44); // Set RAM X start/end
+      |                  ^~~
+      |                  |
+      |                  struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:15:46: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   15 | static void send_command(spi_device_handle_t spi, uint8_t cmd) {
+      |                          ~~~~~~~~~~~~~~~~~~~~^~~
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:99:15: warning: passing argument 1 of 'send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+   99 |     send_data(spi, 0x00);
+      |               ^~~
+      |               |
+      |               struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:28:43: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   28 | static void send_data(spi_device_handle_t spi, uint8_t data) {
+      |                       ~~~~~~~~~~~~~~~~~~~~^~~
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:100:15: warning: passing argument 1 of 'send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  100 |     send_data(spi, 0x18);
+      |               ^~~
+      |               |
+      |               struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:28:43: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   28 | static void send_data(spi_device_handle_t spi, uint8_t data) {
+      |                       ~~~~~~~~~~~~~~~~~~~~^~~
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:103:18: warning: passing argument 1 of 'send_command' from incompatible pointer type [-Wincompatible-pointer-types]
+  103 |     send_command(spi, 0x45);  // Set RAM Y start/end
+      |                  ^~~
+      |                  |
+      |                  struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:15:46: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   15 | static void send_command(spi_device_handle_t spi, uint8_t cmd) {
+      |                          ~~~~~~~~~~~~~~~~~~~~^~~
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:104:15: warning: passing argument 1 of 'send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  104 |     send_data(spi, 0xC7);
+      |               ^~~
+      |               |
+      |               struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:28:43: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   28 | static void send_data(spi_device_handle_t spi, uint8_t data) {
+      |                       ~~~~~~~~~~~~~~~~~~~~^~~
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:105:15: warning: passing argument 1 of 'send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  105 |     send_data(spi, 0x00);
+      |               ^~~
+      |               |
+      |               struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:28:43: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   28 | static void send_data(spi_device_handle_t spi, uint8_t data) {
+      |                       ~~~~~~~~~~~~~~~~~~~~^~~
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:106:15: warning: passing argument 1 of 'send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  106 |     send_data(spi, 0x00);
+      |               ^~~
+      |               |
+      |               struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:28:43: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   28 | static void send_data(spi_device_handle_t spi, uint8_t data) {
+      |                       ~~~~~~~~~~~~~~~~~~~~^~~
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:107:15: warning: passing argument 1 of 'send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  107 |     send_data(spi, 0x00);
+      |               ^~~
+      |               |
+      |               struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:28:43: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   28 | static void send_data(spi_device_handle_t spi, uint8_t data) {
+      |                       ~~~~~~~~~~~~~~~~~~~~^~~
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:109:18: warning: passing argument 1 of 'send_command' from incompatible pointer type [-Wincompatible-pointer-types]
+  109 |     send_command(spi, 0x3C);  // Border waveform
+      |                  ^~~
+      |                  |
+      |                  struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:15:46: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   15 | static void send_command(spi_device_handle_t spi, uint8_t cmd) {
+      |                          ~~~~~~~~~~~~~~~~~~~~^~~
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:110:15: warning: passing argument 1 of 'send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  110 |     send_data(spi, 0x05);
+      |               ^~~
+      |               |
+      |               struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:28:43: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   28 | static void send_data(spi_device_handle_t spi, uint8_t data) {
+      |                       ~~~~~~~~~~~~~~~~~~~~^~~
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:112:18: warning: passing argument 1 of 'send_command' from incompatible pointer type [-Wincompatible-pointer-types]
+  112 |     send_command(spi, 0x18);  // Temperature sensor
+      |                  ^~~
+      |                  |
+      |                  struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:15:46: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   15 | static void send_command(spi_device_handle_t spi, uint8_t cmd) {
+      |                          ~~~~~~~~~~~~~~~~~~~~^~~
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:113:15: warning: passing argument 1 of 'send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  113 |     send_data(spi, 0x80);
+      |               ^~~
+      |               |
+      |               struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:28:43: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   28 | static void send_data(spi_device_handle_t spi, uint8_t data) {
+      |                       ~~~~~~~~~~~~~~~~~~~~^~~
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:115:18: warning: passing argument 1 of 'send_command' from incompatible pointer type [-Wincompatible-pointer-types]
+  115 |     send_command(spi, 0x4E);  // Set RAM X counter
+      |                  ^~~
+      |                  |
+      |                  struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:15:46: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   15 | static void send_command(spi_device_handle_t spi, uint8_t cmd) {
+      |                          ~~~~~~~~~~~~~~~~~~~~^~~
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:116:15: warning: passing argument 1 of 'send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  116 |     send_data(spi, 0x00);
+      |               ^~~
+      |               |
+      |               struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:28:43: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   28 | static void send_data(spi_device_handle_t spi, uint8_t data) {
+      |                       ~~~~~~~~~~~~~~~~~~~~^~~
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:117:18: warning: passing argument 1 of 'send_command' from incompatible pointer type [-Wincompatible-pointer-types]
+  117 |     send_command(spi, 0x4F);  // Set RAM Y counter
+      |                  ^~~
+      |                  |
+      |                  struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:15:46: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   15 | static void send_command(spi_device_handle_t spi, uint8_t cmd) {
+      |                          ~~~~~~~~~~~~~~~~~~~~^~~
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:118:15: warning: passing argument 1 of 'send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  118 |     send_data(spi, 0xC7);
+      |               ^~~
+      |               |
+      |               struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:28:43: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   28 | static void send_data(spi_device_handle_t spi, uint8_t data) {
+      |                       ~~~~~~~~~~~~~~~~~~~~^~~
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:119:15: warning: passing argument 1 of 'send_data' from incompatible pointer type [-Wincompatible-pointer-types]
+  119 |     send_data(spi, 0x00);
+      |               ^~~
+      |               |
+      |               struct spi_device_t **
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/epd.c:28:43: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t **'
+   28 | static void send_data(spi_device_handle_t spi, uint8_t data) {
+      |                       ~~~~~~~~~~~~~~~~~~~~^~~
+[6/10] Linking C static library esp-idf\main\libmain.a
+[7/10] Generating ld/sections.ld
+[8/10] Linking CXX executable EPDTEST2.elf
+[9/10] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/hario/OneDrive/Desktop/EPDTEST2/build/EPDTEST2.bin
+[10/10] cmd.exe /C "cd /D C:\Users\hario\OneDrive\Desktop\EPDTEST2\build\esp-idf\esptool_py && c:\esp\tools\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/esp/esp-idf/v5.1.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/hario/OneDrive/Desktop/EPDTEST2/build/partition_table/partition-table.bin C:/Users/hario/OneDrive/Desktop/EPDTEST2/build/EPDTEST2.bin"
+EPDTEST2.bin binary size 0x30b80 bytes. Smallest app partition is 0x100000 bytes. 0xcf480 bytes (81%) free.
