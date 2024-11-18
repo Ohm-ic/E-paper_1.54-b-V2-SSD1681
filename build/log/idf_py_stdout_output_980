@@ -1,47 +1,78 @@
-[1/5] cmd.exe /C "cd /D C:\Users\hario\OneDrive\Desktop\EPDTEST2\build\esp-idf\esptool_py && c:\esp\tools\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/esp/esp-idf/v5.1.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/hario/OneDrive/Desktop/EPDTEST2/build/partition_table/partition-table.bin C:/Users/hario/OneDrive/Desktop/EPDTEST2/build/EPDTEST2.bin"
-EPDTEST2.bin binary size 0x30bf0 bytes. Smallest app partition is 0x100000 bytes. 0xcf410 bytes (81%) free.
-[2/5] Performing build step for 'bootloader'
-[1/1] C:\WINDOWS\SYSTEM32\cmd.exe /C "cd /D C:\Users\hario\OneDrive\Desktop\EPDTEST2\build\bootloader\esp-idf\esptool_py && c:\esp\tools\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/esp/esp-idf/v5.1.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/hario/OneDrive/Desktop/EPDTEST2/build/bootloader/bootloader.bin"
-Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
-[3/5] No install step for 'bootloader'
-[4/5] Completed 'bootloader'
-[4/5] cmd.exe /C "cd /D C:\esp\esp-idf\v5.1.5\esp-idf\components\esptool_py && C:\esp\tools\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/esp/esp-idf/v5.1.5/esp-idf -D SERIAL_TOOL=c:/esp/tools/python_env/idf5.1_py3.11_env/Scripts/python.exe;;C:/esp/esp-idf/v5.1.5/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/hario/OneDrive/Desktop/EPDTEST2/build -P C:/esp/esp-idf/v5.1.5/esp-idf/components/esptool_py/run_serial_tool.cmake"
-esptool.py --chip esp32 -p COM16 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 EPDTEST2.bin 0x8000 partition_table/partition-table.bin
-esptool.py v4.7.0
-Serial port COM16
-Connecting....
-Chip is ESP32-D0WD-V3 (revision v3.1)
-Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
-Crystal is 40MHz
-MAC: b0:a7:32:2a:c3:a0
-Uploading stub...
-Running stub...
-Stub running...
-Changing baud rate to 460800
-Changed.
-Configuring flash size...
-Flash will be erased from 0x00001000 to 0x00007fff...
-Flash will be erased from 0x00010000 to 0x00040fff...
-Flash will be erased from 0x00008000 to 0x00008fff...
-Compressed 26720 bytes to 16725...
-Writing at 0x00001000... (50 %)
-Writing at 0x000076a4... (100 %)
-Wrote 26720 bytes (16725 compressed) at 0x00001000 in 0.6 seconds (effective 334.1 kbit/s)...
-Hash of data verified.
-Compressed 199664 bytes to 110952...
-Writing at 0x00010000... (14 %)
-Writing at 0x0001cdec... (28 %)
-Writing at 0x0002297e... (42 %)
-Writing at 0x0002864c... (57 %)
-Writing at 0x0002e9eb... (71 %)
-Writing at 0x0003658c... (85 %)
-Writing at 0x0003c09d... (100 %)
-Wrote 199664 bytes (110952 compressed) at 0x00010000 in 3.1 seconds (effective 515.1 kbit/s)...
-Hash of data verified.
-Compressed 3072 bytes to 103...
-Writing at 0x00008000... (100 %)
-Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 281.7 kbit/s)...
-Hash of data verified.
+ets Jul 29 2019 12:21:46
 
-Leaving...
-Hard resetting via RTS pin...
+rst:0x1 (POWERON_RESET),boot:0x13 (SOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15624
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (29) boot: ESP-IDF v5.1.5 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Nov 13 2024 15:16:31[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0da38h ( 55864) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001da60 vaddr=3ffb0000 size=022b0h (  8880) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001fd18 vaddr=40080000 size=00300h (   768) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=17310h ( 94992) map[0m
+[0;32mI (171) esp_image: segment 4: paddr=00037338 vaddr=40080300 size=0d710h ( 55056) load[0m
+[0;32mI (201) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (201) boot: Disabling RNG early entropy source...[0m
+[0;32mI (213) cpu_start: Multicore app[0m
+[0;32mI (214) cpu_start: Pro cpu up.[0m
+[0;32mI (214) cpu_start: Starting app cpu, entry point is 0x400811ec[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (231) cpu_start: Pro cpu start user code[0m
+[0;32mI (231) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (231) cpu_start: Application information:[0m
+[0;32mI (236) cpu_start: Project name:     EPDTEST2[0m
+[0;32mI (241) cpu_start: App version:      1[0m
+[0;32mI (245) cpu_start: Compile time:     Nov 13 2024 15:16:30[0m
+[0;32mI (251) cpu_start: ELF file SHA256:  caa8d68b922ab159...[0m
+[0;32mI (257) cpu_start: ESP-IDF:          v5.1.5[0m
+[0;32mI (262) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (267) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (272) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (277) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (284) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFB2B70 len 0002D490 (181 KiB): DRAM[0m
+[0;32mI (296) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (309) heap_init: At 4008DA10 len 000125F0 (73 KiB): IRAM[0m
+[0;32mI (316) spi_flash: detected chip: generic[0m
+[0;32mI (320) spi_flash: flash io: dio[0m
+[0;32mI (324) app_start: Starting scheduler on CPU0[0m
+[0;32mI (329) app_start: Starting scheduler on CPU1[0m
+[0;32mI (329) main_task: Started on CPU0[0m
+[0;32mI (339) main_task: Calling app_main()[0m
+[0;32mI (339) gpio: GPIO[16]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (349) gpio: GPIO[17]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (359) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (369) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (889) EPD: E-Paper initialized successfully[0m
+[0;32mI (14919) EPD: The Display is cleared[0m
+[0;32mI (28949) EPD: The Display is cleared[0m
+[0;32mI (43379) EPD: The Image had been Displayed[0m
+[0;32mI (43379) EPD: String displayed successfully[0m
+[0;32mI (57809) EPD: The Image had been Displayed[0m
+[0;32mI (57809) EPD: String displayed successfully[0m
+[0;32mI (76739) EPD: The Image had been Displayed[0m
+[0;32mI (76739) EPD: String displayed successfully[0m
+[0;32mI (76839) EPD: The display is in Deep Sleep[0m
