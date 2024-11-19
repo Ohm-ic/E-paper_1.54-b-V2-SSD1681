@@ -1,9 +1,20 @@
+/**
+ * @file epd.h
+ * @author Hariom Agrahari ({hariomagrahri06@gmail.com})
+ * @brief Header File for driving WaveShare's E-ink Display. 1.54" SPI, 200*200, SSD1681 Driver IC, Red,Black,White
+ * @version 0.1
+ * @date 2024-11-19
+ *
+ * @copyright Copyright (c) 2024
+ *
+ */
 #ifndef DISPLAY_H
 #define DISPLAY_H
 
 #include "driver/spi_master.h"
 #include "pindefs.h"
 #include "fonts.h"
+#include "qrcode.h"
 
 #define EPD_WIDTH 200
 #define EPD_HEIGHT 200
@@ -196,11 +207,13 @@ void EPD_UpdateDisplay(spi_device_handle_t *spi);
  * @brief Demo to Display Buffer based Functions. Used to Display Multiple things like Strings, Bitmpas etc onto the Display at One Shot
  *
  * @param spi *SPI Pointer to SPI Device Handle
+ * 
+ * @note Go to this Function to know how to use buffer based Functions
  */
 void EPD_CombinedDemo_Buffer(spi_device_handle_t *spi);
 
 /**
- * @brief Displays String with multiple Changes like Color, Font, Bold etc with Buffers. 
+ * @brief Displays String with multiple Changes like Color, Font, Bold etc with Buffers.
  * // Format commands in string:
 // {R} - Switch to red
 // {B} - Switch to black
@@ -219,12 +232,25 @@ void EPD_CombinedDemo_Buffer(spi_device_handle_t *spi);
  */
 void EPD_DisplayFormattedString_Buffer(const char *str, uint16_t x, uint16_t y);
 
-
 /**
- * @brief Demo For Combined Formatting Demo . Used to Display Multiple things like Strings With diffrent Fonts, Color, Boldness etc, Bitmpas etc onto the Display at One Shot with buffers 
+ * @brief Demo For Combined Formatting Demo . Used to Display Multiple things like Strings With diffrent Fonts, Color, Boldness etc, Bitmpas etc onto the Display at One Shot with buffers
+ *
+ * @param spi *SPI Pointer to SPI Device Handler
  * 
- * @param spi *SPI Pointer to SPI Device Handler 
+ * @note Go to this function to know how to use buffer based Functions.
  */
 void EPD_CombinedFormattingDemo_Buffer(spi_device_handle_t *spi);
+
+/**
+ * @brief 
+ * 
+ * @param data *Pointer to the data or the String which we want to Display
+ * @param x   The X Co-ordinate to Start Drawing the QR Code. It is of Float Datatype but use it as Integer.
+ * @param y   The Y Co-ordinate to Start Drawing the QR Code. It is of Float Datatype but use it as Integer.
+ * @param size Size of the QR Code onto the Display. Can be Used as Float. Eg, 1, 2, 2.5, 3.4 etc. Adjust accordingly
+ * @param ecc  The Error Correction Code. It can be ECC_LOW, ECC_MEDIUM, ECC_HIGH, ECC_QUARTILE, ECC_HIGH
+ * @param color Color of the QR Code. 0 For Black and Red For White.
+ */
+void EPD_DisplayQRCode_Buffer(const char *data, float x, float y, float size, uint8_t ecc, uint8_t color);
 
 #endif // DISPLAY_H

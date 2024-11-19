@@ -1,3 +1,13 @@
+/**
+ * @file main.c
+ * @author Hariom Agrahari ({hariomagrahri06@gmail.com})
+ * @brief Main File to Driver E paper Display. Waveshare E-Paper Display 1.54"V2, 200*200, SSD1681 Driver IC,(Red,Black,White)
+ * @version 0.1
+ * @date 2024-11-19
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #include "epd.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
@@ -11,7 +21,21 @@ void app_main(void)
     display_init(&spi_handle);
     display_clear(&spi_handle);
     //EPD_CombinedDemo_Buffer(&spi_handle);
-    EPD_CombinedFormattingDemo_Buffer(&spi_handle);
+  //  EPD_CombinedFormattingDemo_Buffer(&spi_handle);
+
+
+   EPD_InitBuffers(); // Initialize shared buffers
+
+    // Example QR code content
+    const char *data = "Hello There. This is QR code";
+
+    // Display QR code
+    EPD_DisplayQRCode_Buffer(data, 0, 0, 2.5, ECC_HIGH, 0); // Black QR code at (50,50) with medium ECC
+
+    // Update the display with buffer content
+    EPD_UpdateDisplay(&spi_handle);
+
+    EPD_FreeBuffers(); // Free shared buffers
     display_zzz(&spi_handle);
 
     while (1)

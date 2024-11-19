@@ -1,4 +1,5 @@
 #include "epd.h"
+#include "qrcode.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "driver/gpio.h"
@@ -1056,6 +1057,56 @@ void EPD_CombinedFormattingDemo_Buffer(spi_device_handle_t *spi)
 
     // Free the shared buffers
     EPD_FreeBuffers();
+}
+
+// Displays QR Code onto the Display
+void EPD_DisplayQRCode_Buffer(const char *data, 
+                               float x, float y, 
+                               float size, uint8_t ecc, 
+                               uint8_t color)
+{
+    if (!data || !shared_black_buffer || !shared_red_buffer) {
+        ESP_LOGE(TAG, "Invalid input or shared buffers not initialized");
+        return;
+    }
+
+    QRCode qrcode;
+    uint8_t qrcodeBytes[qrcode_getBufferSize(10)]; // Supports up to version 4
+
+    // Initialize the QR code
+    if (qrcode_initText(&qrcode, qrcodeBytes, 10, ecc, data) < 0) {
+        ESP_LOGE(TAG, "Failed to initialize QR code");
+        return;
+    }
+
+    // Draw QR code onto the buffer
+    for (uint16_t row = 0; row < qrcode.size; row++) {
+        for (uint16_t col = 0; col < qrcode.size; col++) {
+            // Check if the QR code pixel is black
+            if (qrcode_getModule(&qrcode, col, row)) {
+                // Calculate scaled positions and iterate over them
+                uint16_t start_x = (uint16_t)(x + col * size);
+                uint16_t start_y = (uint16_t)(y + row * size);
+                uint16_t end_x = (uint16_t)(x + (col + 1) * size);
+                uint16_t end_y = (uint16_t)(y + (row + 1) * size);
+
+                for (uint16_t pixel_x = start_x; pixel_x < end_x; pixel_x++) {
+                    for (uint16_t pixel_y = start_y; pixel_y < end_y; pixel_y++) {
+                        // Ensure the pixel is within bounds
+                        if (pixel_x < EPD_WIDTH && pixel_y < EPD_HEIGHT) {
+                            if (color == 0) { // Black
+                                EPD_SetPixel(pixel_x, pixel_y, 1, 0, shared_black_buffer, shared_red_buffer);
+                            } else { // Red
+                                EPD_SetPixel(pixel_x, pixel_y, 0, 1, shared_black_buffer, shared_red_buffer);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    ESP_LOGI(TAG, "QR code displayed successfully");
 }
 
 // Above this everything works Smoothly------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
