@@ -1,12 +1,12 @@
 /**
  * @file main.c
  * @author Hariom Agrahari ({hariomagrahri06@gmail.com})
- * @brief Main File to Driver E paper Display. Waveshare E-Paper Display 1.54"V2, 200*200, SSD1681 Driver IC,(Red,Black,White)
+ * @brief Main File to Driver E paper Display. Waveshare E-Paper Display 1.54"V2, 200*200, SSD1681 Driver IC, (Red,Black,White)
  * @version 0.1
  * @date 2024-11-19
- * 
+ *
  * @copyright Copyright (c) 2024
- * 
+ *
  */
 #include "epd.h"
 #include "freertos/FreeRTOS.h"
@@ -15,22 +15,32 @@
 #include "esp_log.h"
 #include "fonts.h"
 
+// Example WiFi logo bitmap
+const uint8_t wifi_logo[] = {
+    0x03, 0xfc, 0x00, 0x1f, 0xff, 0x80, 0x3e, 0x07, 0xc0, 0xf0, 0x00, 0xf0,
+    0xc1, 0xf8, 0x30, 0x0f, 0xff, 0x00, 0x1e, 0x07, 0x80, 0x18, 0x01, 0x80,
+    0x00, 0xf0, 0x00, 0x03, 0xfc, 0x00, 0x03, 0x0c, 0x00, 0x00, 0x00, 0x00,
+    0x00, 0x60, 0x00, 0x00, 0xf0, 0x00, 0x00, 0xf0, 0x00, 0x00, 0x60, 0x00,
+    0xff, 0xff, 0xf0, 0xff, 0xff, 0xf0, 0xff, 0xff, 0xf0, 0xff, 0xff, 0xf0};
+
 void app_main(void)
 {
     spi_device_handle_t spi_handle;
     display_init(&spi_handle);
     display_clear(&spi_handle);
-    //EPD_CombinedDemo_Buffer(&spi_handle);
-  //  EPD_CombinedFormattingDemo_Buffer(&spi_handle);
+    // EPD_CombinedDemo_Buffer(&spi_handle);
+    //  EPD_CombinedFormattingDemo_Buffer(&spi_handle);
 
-
-   EPD_InitBuffers(); // Initialize shared buffers
+    EPD_InitBuffers(); // Initialize shared buffers
 
     // Example QR code content
-    const char *data = "Hello There. This is QR code";
+    const char *data = "First Line\nSecond Line\nThired Line\nHello World this is me the QR code.";
 
     // Display QR code
-    EPD_DisplayQRCode_Buffer(data, 0, 0, 2.5, ECC_HIGH, 0); // Black QR code at (50,50) with medium ECC
+    EPD_DisplayQRCode_Buffer(data, 30, 5, 3, ECC_LOW, 0);
+    EPD_DrawBitmap_Buffer(wifi_logo, 0, 180, 20, 20, 0);             // Draw WiFi logo in black
+    EPD_DisplayString_Buffer("15:04|19-11-24", 35, 185, &Font16, 1); // Draw text in red
+    EPD_DisplayFormattedString_Buffer("{F3}{+B}PL{R}a{B}Y ARENA{-B}{RST}",20,150);
 
     // Update the display with buffer content
     EPD_UpdateDisplay(&spi_handle);

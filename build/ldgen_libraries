@@ -1,4 +1,4 @@
-C:/Users/hario/OneDrive/Desktop/EPDTEST2/build/esp-idf/xtensa/libxtensa.a
+C:/Users/hario/OneDrive/Desktop/EPDTEST2/build/esp-idf/riscv/libriscv.a
 C:/Users/hario/OneDrive/Desktop/EPDTEST2/build/esp-idf/esp_ringbuf/libesp_ringbuf.a
 C:/Users/hario/OneDrive/Desktop/EPDTEST2/build/esp-idf/efuse/libefuse.a
 C:/Users/hario/OneDrive/Desktop/EPDTEST2/build/esp-idf/driver/libdriver.a
@@ -56,7 +56,6 @@ C:/Users/hario/OneDrive/Desktop/EPDTEST2/build/esp-idf/sdmmc/libsdmmc.a
 C:/Users/hario/OneDrive/Desktop/EPDTEST2/build/esp-idf/fatfs/libfatfs.a
 C:/Users/hario/OneDrive/Desktop/EPDTEST2/build/esp-idf/json/libjson.a
 C:/Users/hario/OneDrive/Desktop/EPDTEST2/build/esp-idf/mqtt/libmqtt.a
-C:/Users/hario/OneDrive/Desktop/EPDTEST2/build/esp-idf/perfmon/libperfmon.a
 C:/Users/hario/OneDrive/Desktop/EPDTEST2/build/esp-idf/spiffs/libspiffs.a
 C:/Users/hario/OneDrive/Desktop/EPDTEST2/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
 C:/Users/hario/OneDrive/Desktop/EPDTEST2/build/esp-idf/main/libmain.a

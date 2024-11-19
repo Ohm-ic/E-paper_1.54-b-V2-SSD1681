@@ -119,11 +119,11 @@ void display_init(spi_device_handle_t *spi)
         .pre_cb = NULL};
 
     // Initialize SPI bus
-    ret = spi_bus_initialize(SPI3_HOST, &buscfg, SPI_DMA_CH_AUTO);
+    ret = spi_bus_initialize(SPI2_HOST, &buscfg, SPI_DMA_CH_AUTO);
     ESP_ERROR_CHECK(ret);
 
     // Add device to the SPI bus
-    ret = spi_bus_add_device(SPI3_HOST, &devcfg, spi);
+    ret = spi_bus_add_device(SPI2_HOST, &devcfg, spi);
     ESP_ERROR_CHECK(ret);
 
     if (*spi == NULL)
@@ -884,7 +884,7 @@ void EPD_CombinedDemo_Buffer(spi_device_handle_t *spi)
 
     // Draw bitmap and text to shared buffer
     EPD_DrawBitmap_Buffer(wifi_logo, 0, 180, 20, 20, 0);          // Draw WiFi logo in black
-    EPD_DisplayString_Buffer("WiFi Status", 21, 185, &Font16, 1); // Draw text in red
+    EPD_DisplayString_Buffer("WiFi Status", 35, 185, &Font16, 1); // Draw text in red
 
     // Update display with combined content
     EPD_UpdateDisplay(spi);
@@ -931,13 +931,19 @@ void EPD_DisplayFormattedString_Buffer(const char *str, uint16_t x, uint16_t y)
             }
             else if (strncmp(p, "{F1}", 4) == 0)
             {
-                current_style.font = &Font16;
+                current_style.font = &Font12;
                 p += 4;
                 continue;
             }
             else if (strncmp(p, "{F2}", 4) == 0)
             {
-                current_style.font = &Font24;
+                current_style.font = &Font16;
+                p += 4;
+                continue;
+            }
+            else if(strncmp(p, "{F3}", 4) == 0)
+            {
+                current_style.font = &Font20;
                 p += 4;
                 continue;
             }
@@ -1071,10 +1077,10 @@ void EPD_DisplayQRCode_Buffer(const char *data,
     }
 
     QRCode qrcode;
-    uint8_t qrcodeBytes[qrcode_getBufferSize(10)]; // Supports up to version 4
+    uint8_t qrcodeBytes[qrcode_getBufferSize(7)]; // Currently Version 7. Supports Upto not known...
 
     // Initialize the QR code
-    if (qrcode_initText(&qrcode, qrcodeBytes, 10, ecc, data) < 0) {
+    if (qrcode_initText(&qrcode, qrcodeBytes, 7, ecc, data) < 0) {
         ESP_LOGE(TAG, "Failed to initialize QR code");
         return;
     }

@@ -208,7 +208,7 @@ void EPD_UpdateDisplay(spi_device_handle_t *spi);
  *
  * @param spi *SPI Pointer to SPI Device Handle
  * 
- * @note Go to this Function to know how to use buffer based Functions
+ * @note Go to this Function to know how to use buffer based Functions.
  */
 void EPD_CombinedDemo_Buffer(spi_device_handle_t *spi);
 
@@ -217,8 +217,9 @@ void EPD_CombinedDemo_Buffer(spi_device_handle_t *spi);
  * // Format commands in string:
 // {R} - Switch to red
 // {B} - Switch to black
-// {F1} - Switch to Font16
-// {F2} - Switch to Font24
+// {F1} - Switch to Font12
+// {F2} - Switch to Font16
+// {F3} - Switch to Font20
 // {+B} - Start bold
 // {-B} - End bold
 // {RST} - Reset all formatting to default
@@ -250,6 +251,8 @@ void EPD_CombinedFormattingDemo_Buffer(spi_device_handle_t *spi);
  * @param size Size of the QR Code onto the Display. Can be Used as Float. Eg, 1, 2, 2.5, 3.4 etc. Adjust accordingly
  * @param ecc  The Error Correction Code. It can be ECC_LOW, ECC_MEDIUM, ECC_HIGH, ECC_QUARTILE, ECC_HIGH
  * @param color Color of the QR Code. 0 For Black and Red For White.
+ * 
+ * @note Currently the QR Code version is fixed at version 7. If change is needed go to epd.c -> EPD_DisplayQRCode_Buffer -> qrcode_getBufferSize (Change acoording to the versions) & qrcode_initText (Chnage According to Versions).
  */
 void EPD_DisplayQRCode_Buffer(const char *data, float x, float y, float size, uint8_t ecc, uint8_t color);
 
