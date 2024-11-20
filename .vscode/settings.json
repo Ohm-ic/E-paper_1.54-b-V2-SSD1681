@@ -24,6 +24,9 @@
         "ostream": "c",
         "task.h": "c",
         "epdif.h": "c",
-        "spi_master.h": "c"
+        "spi_master.h": "c",
+        "array": "c",
+        "string": "c",
+        "string_view": "c"
     }
 }

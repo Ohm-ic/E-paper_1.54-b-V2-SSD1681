@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "EPDTEST2",
-    "project_version":    "1fed0f3-dirty",
+    "project_version":    "ae88624-dirty",
     "project_path":       "C:/Users/hario/OneDrive/Desktop/EPDTEST2",
     "idf_path":           "C:/esp/esp-idf/v5.1.5/esp-idf",
     "build_dir":          "C:/Users/hario/OneDrive/Desktop/EPDTEST2/build",

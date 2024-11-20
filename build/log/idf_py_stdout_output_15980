@@ -1,0 +1,298 @@
+[0;32mI (364) sleep: Enable automatic switching of ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1704
+load:0x403cc710,len:0x968
+load:0x403ce710,len:0x2fa8
+entry 0x403cc710
+[0;32mI (24) boot: ESP-IDF v5.1.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 19 2024 15:38:21[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=22510h (140560) map[0m
+[0;32mI (116) esp_image: segment 1: paddr=00032538 vaddr=3fc93a00 size=02c4ch ( 11340) load[0m
+[0;32mI (118) esp_image: segment 2: paddr=0003518c vaddr=40380000 size=0ae8ch ( 44684) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=99ea8h (630440) map[0m
+[0;32mI (233) esp_image: segment 4: paddr=000d9ed0 vaddr=4038ae8c size=089f4h ( 35316) load[0m
+[0;32mI (246) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (246) boot: Disabling RNG early entropy source...[0m
+[0;32mI (257) cpu_start: Unicore app[0m
+[0;32mI (258) cpu_start: Pro cpu up.[0m
+[0;32mI (266) cpu_start: Pro cpu start user code[0m
+[0;32mI (266) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (266) cpu_start: Application information:[0m
+[0;32mI (269) cpu_start: Project name:     EPDTEST2[0m
+[0;32mI (274) cpu_start: App version:      ae88624-dirty[0m
+[0;32mI (280) cpu_start: Compile time:     Nov 19 2024 18:39:07[0m
+[0;32mI (286) cpu_start: ELF file SHA256:  e238d7f85e4739a8...[0m
+[0;32mI (292) cpu_start: ESP-IDF:          v5.1.5[0m
+[0;32mI (297) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (301) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (306) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (311) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (318) heap_init: At 3FC9AC40 len 000253C0 (148 KiB): DRAM[0m
+[0;32mI (324) heap_init: At 3FCC0000 len 0001C710 (113 KiB): DRAM/RETENTION[0m
+[0;32mI (332) heap_init: At 3FCDC710 len 00002950 (10 KiB): DRAM/RETENTION/STACK[0m
+[0;32mI (339) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (346) spi_flash: detected chip: generic[0m
+[0;32mI (350) spi_flash: flash io: dio[0m
+[0;32mI (354) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (361) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (368) app_start: Starting scheduler on CPU0[0m
+[0;32mI (373) main_task: Started on CPU0[0m
+[0;32mI (373) main_task: Calling app_main()[0m
+[0;32mI (383) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (383) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (393) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (403) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (923) EPD: E-Paper initialized successfully[0m
+[0;32mI (14773) EPD: The Display is cleared[0m
+[0;32mI (14773) example: ESP_WIFI_MODE_STA[0m
+[0;32mI (14773) pp: pp rom version: 9387209[0m
+[0;32mI (14773) net80211: net80211 rom version: 9387209[0m
+[0;32mI (14783) wifi:wifi driver task: 3fca3b68, prio:23, stack:6656, core=0[0m
+[0;32mI (14783) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (14783) wifi:wifi certification version: v7.0[0m
+[0;32mI (14793) wifi:config NVS flash: enabled[0m
+[0;32mI (14793) wifi:config nano formating: disabled[0m
+[0;32mI (14793) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (14803) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (14803) wifi:Init management short buffer num: 32[0m
+[0;32mI (14813) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (14813) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (14823) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (14823) wifi:Init static rx buffer num: 10[0m
+[0;32mI (14833) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (14833) wifi_init: rx ba win: 6[0m
+[0;32mI (14833) wifi_init: tcpip mbox: 32[0m
+[0;32mI (14843) wifi_init: udp mbox: 6[0m
+[0;32mI (14843) wifi_init: tcp mbox: 6[0m
+[0;32mI (14853) wifi_init: tcp tx win: 5760[0m
+[0;32mI (14853) wifi_init: tcp rx win: 5760[0m
+[0;32mI (14853) wifi_init: tcp mss: 1440[0m
+[0;32mI (14863) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (14863) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (14873) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (14883) phy_init: phy_version 1180,01f2a49,Jun  4 2024,16:34:25[0m
+[0;32mI (14923) wifi:mode : sta (74:4d:bd:e2:98:6c)[0m
+[0;32mI (14923) wifi:enable tsf[0m
+[0;32mI (14923) example: wifi_init_sta finished.[0m
+[0;32mI (14933) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (14933) wifi:state: init -> auth (b0)[0m
+[0;32mI (14993) wifi:state: auth -> assoc (0)[0m
+[0;32mI (14993) wifi:state: assoc -> run (10)[0m
+[0;32mI (15013) wifi:connected with ESPP, aid = 1, channel 11, BW20, bssid = ea:f3:bc:e1:76:3f[0m
+[0;32mI (15013) wifi:security: WPA2-PSK, phy: bgn, rssi: -38[0m
+[0;32mI (15013) wifi:pm start, type: 1[0m
+
+[0;32mI (15023) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (15033) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (15103) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (15103) wifi:<ba-add>idx:0 (ifx:0, ea:f3:bc:e1:76:3f), tid:0, ssn:0, winSize:64[0m
+[0;32mI (16033) esp_netif_handlers: sta ip: 192.168.137.22, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (16033) example: got ip:192.168.137.22[0m
+[0;32mI (16033) example: connected to ap[0m
+[0;32mI (16033) example: Initializing SNTP[0m
+[0;32mI (16043) example: Waiting for system time to be set... (1/10)[0m
+[0;32mI (18043) example: Waiting for system time to be set... (2/10)[0m
+[0;32mI (20043) example: Waiting for system time to be set... (3/10)[0m
+[0;32mI (20793) wifi:<ba-add>idx:1 (ifx:0, ea:f3:bc:e1:76:3f), tid:6, ssn:2, winSize:64[0m
+[0;32mI (21043) example: Notification of a time synchronization event[0m
+[0;32mI (22043) example: Unix Epoch time: 1732085882[0m
+[0;32mI (22043) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732085882}
+[0m
+[0;32mI (22043) example: Indian Standard Time: 20/11/24|12:28[0m
+[0;32mI (22103) EPD: QR code displayed successfully[0m
+[0;32mI (35963) EPD: The Image had been Displayed[0m
+[0;32mI (65963) example: Unix Epoch time: 1732085926[0m
+[0;32mI (65963) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732085926}
+[0m
+[0;32mI (65963) example: Indian Standard Time: 20/11/24|12:28[0m
+[0;32mI (66023) EPD: QR code displayed successfully[0m
+[0;32mI (79883) EPD: The Image had been Displayed[0m
+[0;32mI (109883) example: Unix Epoch time: 1732085970[0m
+[0;32mI (109883) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732085970}
+[0m
+[0;32mI (109883) example: Indian Standard Time: 20/11/24|12:29[0m
+[0;32mI (109943) EPD: QR code displayed successfully[0m
+[0;32mI (123803) EPD: The Image had been Displayed[0m
+[0;32mI (153803) example: Unix Epoch time: 1732086014[0m
+[0;32mI (153803) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732086014}
+[0m
+[0;32mI (153803) example: Indian Standard Time: 20/11/24|12:30[0m
+[0;32mI (153863) EPD: QR code displayed successfully[0m
+[0;32mI (167723) EPD: The Image had been Displayed[0m
+[0;32mI (197723) example: Unix Epoch time: 1732086058[0m
+[0;32mI (197723) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732086058}
+[0m
+[0;32mI (197723) example: Indian Standard Time: 20/11/24|12:30[0m
+[0;32mI (197783) EPD: QR code displayed successfully[0m
+[0;32mI (211643) EPD: The Image had been Displayed[0m
+[0;32mI (241643) example: Unix Epoch time: 1732086102[0m
+[0;32mI (241643) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732086102}
+[0m
+[0;32mI (241643) example: Indian Standard Time: 20/11/24|12:31[0m
+[0;32mI (241703) EPD: QR code displayed successfully[0m
+[0;32mI (255563) EPD: The Image had been Displayed[0m
+[0;32mI (285563) example: Unix Epoch time: 1732086146[0m
+[0;32mI (285563) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732086146}
+[0m
+[0;32mI (285563) example: Indian Standard Time: 20/11/24|12:32[0m
+[0;32mI (285623) EPD: QR code displayed successfully[0m
+[0;32mI (299483) EPD: The Image had been Displayed[0m
+[0;32mI (329483) example: Unix Epoch time: 1732086190[0m
+[0;32mI (329483) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732086190}
+[0m
+[0;32mI (329483) example: Indian Standard Time: 20/11/24|12:33[0m
+[0;32mI (329543) EPD: QR code displayed successfully[0m
+[0;32mI (343403) EPD: The Image had been Displayed[0m
+[0;32mI (373403) example: Unix Epoch time: 1732086234[0m
+[0;32mI (373403) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732086234}
+[0m
+[0;32mI (373403) example: Indian Standard Time: 20/11/24|12:33[0m
+[0;32mI (373463) EPD: QR code displayed successfully[0m
+[0;32mI (387323) EPD: The Image had been Displayed[0m
+[0;32mI (417323) example: Unix Epoch time: 1732086278[0m
+[0;32mI (417323) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732086278}
+[0m
+[0;32mI (417323) example: Indian Standard Time: 20/11/24|12:34[0m
+[0;32mI (417383) EPD: QR code displayed successfully[0m
+[0;32mI (431243) EPD: The Image had been Displayed[0m
+[0;32mI (461243) example: Unix Epoch time: 1732086322[0m
+[0;32mI (461243) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732086322}
+[0m
+[0;32mI (461243) example: Indian Standard Time: 20/11/24|12:35[0m
+[0;32mI (461303) EPD: QR code displayed successfully[0m
+[0;32mI (475163) EPD: The Image had been Displayed[0m
+[0;32mI (505163) example: Unix Epoch time: 1732086366[0m
+[0;32mI (505163) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732086366}
+[0m
+[0;32mI (505163) example: Indian Standard Time: 20/11/24|12:36[0m
+[0;32mI (505223) EPD: QR code displayed successfully[0m
+[0;32mI (519083) EPD: The Image had been Displayed[0m
+[0;32mI (549083) example: Unix Epoch time: 1732086409[0m
+[0;32mI (549083) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732086409}
+[0m
+[0;32mI (549083) example: Indian Standard Time: 20/11/24|12:36[0m
+[0;32mI (549143) EPD: QR code displayed successfully[0m
+[0;32mI (563003) EPD: The Image had been Displayed[0m
+[0;32mI (593003) example: Unix Epoch time: 1732086453[0m
+[0;32mI (593003) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732086453}
+[0m
+[0;32mI (593003) example: Indian Standard Time: 20/11/24|12:37[0m
+[0;32mI (593063) EPD: QR code displayed successfully[0m
+[0;32mI (606923) EPD: The Image had been Displayed[0m
+[0;32mI (636923) example: Unix Epoch time: 1732086497[0m
+[0;32mI (636923) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732086497}
+[0m
+[0;32mI (636923) example: Indian Standard Time: 20/11/24|12:38[0m
+[0;32mI (636983) EPD: QR code displayed successfully[0m
+[0;32mI (650843) EPD: The Image had been Displayed[0m
+[0;32mI (680843) example: Unix Epoch time: 1732086541[0m
+[0;32mI (680843) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732086541}
+[0m
+[0;32mI (680843) example: Indian Standard Time: 20/11/24|12:39[0m
+[0;32mI (680903) EPD: QR code displayed successfully[0m
+[0;32mI (694763) EPD: The Image had been Displayed[0m
+[0;32mI (724763) example: Unix Epoch time: 1732086585[0m
+[0;32mI (724763) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732086585}
+[0m
+[0;32mI (724763) example: Indian Standard Time: 20/11/24|12:39[0m
+[0;32mI (724823) EPD: QR code displayed successfully[0m
+[0;32mI (738683) EPD: The Image had been Displayed[0m
+[0;32mI (768683) example: Unix Epoch time: 1732086629[0m
+[0;32mI (768683) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732086629}
+[0m
+[0;32mI (768683) example: Indian Standard Time: 20/11/24|12:40[0m
+[0;32mI (768743) EPD: QR code displayed successfully[0m
+[0;32mI (782603) EPD: The Image had been Displayed[0m
+[0;32mI (812603) example: Unix Epoch time: 1732086673[0m
+[0;32mI (812603) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732086673}
+[0m
+[0;32mI (812603) example: Indian Standard Time: 20/11/24|12:41[0m
+[0;32mI (812663) EPD: QR code displayed successfully[0m
+[0;32mI (826523) EPD: The Image had been Displayed[0m
+[0;32mI (856523) example: Unix Epoch time: 1732086717[0m
+[0;32mI (856523) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732086717}
+[0m
+[0;32mI (856523) example: Indian Standard Time: 20/11/24|12:41[0m
+[0;32mI (856583) EPD: QR code displayed successfully[0m
+[0;32mI (870443) EPD: The Image had been Displayed[0m
+[0;32mI (900443) example: Unix Epoch time: 1732086761[0m
+[0;32mI (900443) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732086761}
+[0m
+[0;32mI (900443) example: Indian Standard Time: 20/11/24|12:42[0m
+[0;32mI (900503) EPD: QR code displayed successfully[0m
+[0;32mI (914363) EPD: The Image had been Displayed[0m
+[0;32mI (944363) example: Unix Epoch time: 1732086805[0m
+[0;32mI (944363) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732086805}
+[0m
+[0;32mI (944363) example: Indian Standard Time: 20/11/24|12:43[0m
+[0;32mI (944423) EPD: QR code displayed successfully[0m
+[0;32mI (958283) EPD: The Image had been Displayed[0m
+[0;32mI (988283) example: Unix Epoch time: 1732086849[0m
+[0;32mI (988283) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732086849}
+[0m
+[0;32mI (988283) example: Indian Standard Time: 20/11/24|12:44[0m
+[0;32mI (988343) EPD: QR code displayed successfully[0m
+[0;32mI (1002203) EPD: The Image had been Displayed[0m
+[0;32mI (1032203) example: Unix Epoch time: 1732086893[0m
+[0;32mI (1032203) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732086893}
+[0m
+[0;32mI (1032203) example: Indian Standard Time: 20/11/24|12:44[0m
+[0;32mI (1032263) EPD: QR code displayed successfully[0m
+[0;32mI (1046123) EPD: The Image had been Displayed[0m
+[0;32mI (1076123) example: Unix Epoch time: 1732086936[0m
+[0;32mI (1076123) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732086936}
+[0m
+[0;32mI (1076123) example: Indian Standard Time: 20/11/24|12:45[0m
+[0;32mI (1076183) EPD: QR code displayed successfully[0m
+[0;32mI (1090043) EPD: The Image had been Displayed[0m
+[0;32mI (1120043) example: Unix Epoch time: 1732086980[0m
+[0;32mI (1120043) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732086980}
+[0m
+[0;32mI (1120043) example: Indian Standard Time: 20/11/24|12:46[0m
+[0;32mI (1120103) EPD: QR code displayed successfully[0m
+[0;32mI (1133963) EPD: The Image had been Displayed[0m
+[0;32mI (1163963) example: Unix Epoch time: 1732087024[0m
+[0;32mI (1163963) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732087024}
+[0m
+[0;32mI (1163963) example: Indian Standard Time: 20/11/24|12:47[0m
+[0;32mI (1164023) EPD: QR code displayed successfully[0m
+[0;32mI (1177883) EPD: The Image had been Displayed[0m
+[0;32mI (1207883) example: Unix Epoch time: 1732087068[0m
+[0;32mI (1207883) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732087068}
+[0m
+[0;32mI (1207883) example: Indian Standard Time: 20/11/24|12:47[0m
+[0;32mI (1207943) EPD: QR code displayed successfully[0m
+[0;32mI (1221803) EPD: The Image had been Displayed[0m
+[0;32mI (1251803) example: Unix Epoch time: 1732087112[0m
+[0;32mI (1251803) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732087112}
+[0m
+[0;32mI (1251803) example: Indian Standard Time: 20/11/24|12:48[0m
+[0;32mI (1251863) EPD: QR code displayed successfully[0m
+[0;32mI (1265723) EPD: The Image had been Displayed[0m
+[0;32mI (1295723) example: Unix Epoch time: 1732087156[0m
+[0;32mI (1295723) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732087156}
+[0m
+[0;32mI (1295723) example: Indian Standard Time: 20/11/24|12:49[0m
+[0;32mI (1295783) EPD: QR code displayed successfully[0m
+[0;32mI (1309643) EPD: The Image had been Displayed[0m
+[0;32mI (1339643) example: Unix Epoch time: 1732087200[0m
+[0;32mI (1339643) example: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732087200}
+[0m
+[0;32mI (1339643) example: Indian Standard Time: 20/11/24|12:50[0m
+[0;32mI (1339703) EPD: QR code displayed successfully[0m
+[0;32mI (1353563) EPD: The Image had been Displayed[0m

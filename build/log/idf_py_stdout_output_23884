@@ -1,0 +1,124 @@
+[0;32mI (359) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (365) sleeESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004c0d4
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1704
+load:0x403cc710,len:0x968
+load:0x403ce710,len:0x2fa8
+entry 0x403cc710
+[0;32mI (24) boot: ESP-IDF v5.1.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 19 2024 15:38:21[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=23890h (145552) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=000338b8 vaddr=3fc93a00 size=02c5ch ( 11356) load[0m
+[0;32mI (119) esp_image: segment 2: paddr=0003651c vaddr=40380000 size=09afch ( 39676) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9a0dch (631004) map[0m
+[0;32mI (233) esp_image: segment 4: paddr=000da104 vaddr=40389afc size=09d84h ( 40324) load[0m
+[0;32mI (247) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (248) boot: Disabling RNG early entropy source...[0m
+[0;32mI (259) cpu_start: Unicore app[0m
+[0;32mI (259) cpu_start: Pro cpu up.[0m
+[0;32mI (268) cpu_start: Pro cpu start user code[0m
+[0;32mI (268) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (268) cpu_start: Application information:[0m
+[0;32mI (271) cpu_start: Project name:     EPDTEST2[0m
+[0;32mI (276) cpu_start: App version:      ae88624-dirty[0m
+[0;32mI (281) cpu_start: Compile time:     Nov 19 2024 18:39:07[0m
+[0;32mI (287) cpu_start: ELF file SHA256:  2ffd704411e2bbb3...[0m
+[0;32mI (293) cpu_start: ESP-IDF:          v5.1.5[0m
+[0;32mI (298) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (303) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (308) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (313) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (320) heap_init: At 3FC9AC40 len 000253C0 (148 KiB): DRAM[0m
+[0;32mI (326) heap_init: At 3FCC0000 len 0001C710 (113 KiB): DRAM/RETENTION[0m
+[0;32mI (333) heap_init: At 3FCDC710 len 00002950 (10 KiB): DRAM/RETENTION/STACK[0m
+[0;32mI (341) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (348) spi_flash: detected chip: generic[0m
+[0;32mI (352) spi_flash: flash io: dio[0m
+[0;32mI (356) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (362) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (369) app_start: Starting scheduler on CPU0[0m
+[0;32mI (374) main_task: Started on CPU0[0m
+[0;32mI (374) main_task: Calling app_main()[0m
+[0;32mI (384) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (384) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (394) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (404) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (924) EPD: E-Paper initialized successfully[0m
+[0;32mI (14774) EPD: The Display is cleared[0m
+[0;32mI (14774) example: ESP_WIFI_MODE_STA[0m
+[0;32mI (14774) pp: pp rom version: 9387209[0m
+[0;32mI (14774) net80211: net80211 rom version: 9387209[0m
+[0;32mI (14784) wifi:wifi driver task: 3fca3b68, prio:23, stack:6656, core=0[0m
+[0;32mI (14784) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (14784) wifi:wifi certification version: v7.0[0m
+[0;32mI (14794) wifi:config NVS flash: enabled[0m
+[0;32mI (14794) wifi:config nano formating: disabled[0m
+[0;32mI (14794) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (14804) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (14804) wifi:Init management short buffer num: 32[0m
+[0;32mI (14814) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (14814) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (14824) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (14824) wifi:Init static rx buffer num: 10[0m
+[0;32mI (14834) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (14834) wifi_init: rx ba win: 6[0m
+[0;32mI (14834) wifi_init: tcpip mbox: 32[0m
+[0;32mI (14844) wifi_init: udp mbox: 6[0m
+[0;32mI (14844) wifi_init: tcp mbox: 6[0m
+[0;32mI (14854) wifi_init: tcp tx win: 5760[0m
+[0;32mI (14854) wifi_init: tcp rx win: 5760[0m
+[0;32mI (14854) wifi_init: tcp mss: 1440[0m
+[0;32mI (14864) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (14864) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (14874) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (14884) phy_init: phy_version 1180,01f2a49,Jun  4 2024,16:34:25[0m
+[0;32mI (14924) wifi:mode : sta (74:4d:bd:e2:98:6c)[0m
+[0;32mI (14924) wifi:enable tsf[0m
+[0;32mI (14924) example: wifi_init_sta finished.[0m
+[0;32mI (14954) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (14954) wifi:state: init -> auth (b0)[0m
+[0;32mI (14964) wifi:state: auth -> assoc (0)[0m
+[0;32mI (14964) wifi:state: assoc -> run (10)[0m
+[0;32mI (14974) wifi:connected with ESPP, aid = 1, channel 11, BW20, bssid = ea:f3:bc:e1:76:3f[0m
+[0;32mI (14974) wifi:security: WPA2-PSK, phy: bgn, rssi: -38[0m
+[0;32mI (14984) wifi:pm start, type: 1[0m
+
+[0;32mI (14984) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (14994) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (15044) wifi:<ba-add>idx:0 (ifx:0, ea:f3:bc:e1:76:3f), tid:0, ssn:0, winSize:64[0m
+[0;32mI (15054) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (16004) esp_netif_handlers: sta ip: 192.168.137.117, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (16004) example: got ip:192.168.137.117[0m
+[0;32mI (16004) example: connected to ap[0m
+[0;32mI (16004) example: Initializing SNTP[0m
+[0;32mI (16014) example: Waiting for system time to be set... (1/10)[0m
+[0;32mI (18014) example: Waiting for system time to be set... (2/10)[0m
+[0;32mI (18774) wifi:<ba-add>idx:1 (ifx:0, ea:f3:bc:e1:76:3f), tid:6, ssn:2, winSize:64[0m
+[0;32mI (19154) example: Notification of a time synchronization event[0m
+[0;32mI (20014) example: Unix Epoch time: 1732022329[0m
+[0;32mI (20014) example: Indian Standard Time: 2024-11-19|18:48[0m
+[0;32mI (20064) EPD: QR code displayed successfully[0m
+[0;32mI (33924) EPD: The Image had been Displayed[0m
+[0;32mI (63924) example: Unix Epoch time: 1732022373[0m
+[0;32mI (63924) example: Indian Standard Time: 2024-11-19|18:49[0m
+[0;32mI (63974) EPD: QR code displayed successfully[0m
+[0;32mI (77834) EPD: The Image had been Displayed[0m
+[0;32mI (107834) example: Unix Epoch time: 1732022417[0m
+[0;32mI (107834) example: Indian Standard Time: 2024-11-19|18:50[0m
+[0;32mI (107884) EPD: QR code displayed successfully[0m
+[0;32mI (121744) EPD: The Image had been Displayed[0m
