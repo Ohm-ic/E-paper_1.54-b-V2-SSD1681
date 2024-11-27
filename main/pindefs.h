@@ -21,3 +21,8 @@
 #define EPD_CS_PIN     7
 #define EPD_CLK_PIN    4
 #define EPD_DIN_PIN    6
+
+
+
+#define I2C_MASTER_SDA_IO 8
+#define I2C_MASTER_SCL_IO 9

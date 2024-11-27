@@ -1,0 +1,56 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM22 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM22 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x42006f14: uart_ll_get_txfifo_len at C:/esp/esp-idf/v5.1.5/esp-idf/components/hal/esp32c3/include/hal/uart_ll.h:344 (discriminator 1)
+ (inlined by) uart_tx_char at C:/esp/esp-idf/v5.1.5/esp-idf/components/vfs/vfs_uart.c:169 (discriminator 1)
+[0m
+[0;33m--- 0x420086a0: time_sync_init at C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/main.c:176 (discriminator 1)
+[0m
+[0;33m--- 0x4038837b: _esp_error_check_failed at C:/esp/esp-idf/v5.1.5/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x40380700: panic_abort at C:/esp/esp-idf/v5.1.5/esp-idf/components/esp_system/panic.c:466
+0x40388386: __ubsan_include at C:/esp/esp-idf/v5.1.5/esp-idf/components/esp_system/ubsan.c:313
+[0m
+[0;33m--- 0x40380001: _vector_table at ??:?
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\hario\\OneDrive\\Desktop\\EPDTEST2\\build\\EPDTEST2.elf', '-ex', 'target remote | "c:\\esp\\tools\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\hario\\AppData\\Local\\Temp\\tmp4nikwtd7"', '-ex', 'bt']' returned non-zero exit status 1.
+b"error starting child process '| c:\\esp\\tools\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\hario\\AppData\\Local\\Temp\\tmp4nikwtd7': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x40048b82: software_reset in ROM
+[0m
+[0;33m--- 0x420086a0: time_sync_init at C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/main.c:176 (discriminator 1)
+[0m
+[0;33m--- 0x4038837b: _esp_error_check_failed at C:/esp/esp-idf/v5.1.5/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x40380700: panic_abort at C:/esp/esp-idf/v5.1.5/esp-idf/components/esp_system/panic.c:466
+0x40388386: __ubsan_include at C:/esp/esp-idf/v5.1.5/esp-idf/components/esp_system/ubsan.c:313
+[0m
+[0;33m--- 0x40380001: _vector_table at ??:?
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\hario\\OneDrive\\Desktop\\EPDTEST2\\build\\EPDTEST2.elf', '-ex', 'target remote | "c:\\esp\\tools\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\hario\\AppData\\Local\\Temp\\tmpzkich22o"', '-ex', 'bt']' returned non-zero exit status 1.
+b"error starting child process '| c:\\esp\\tools\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\hario\\AppData\\Local\\Temp\\tmpzkich22o': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x40048b82: software_reset in ROM
+[0m
+[0;33m--- 0x420086a0: time_sync_init at C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/main.c:176 (discriminator 1)
+[0m
+[0;33m--- 0x4038837b: _esp_error_check_failed at C:/esp/esp-idf/v5.1.5/esp-idf/components/esp_system/esp_err.c:50
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x40380700: panic_abort at C:/esp/esp-idf/v5.1.5/esp-idf/components/esp_system/panic.c:466
+0x40388386: __ubsan_include at C:/esp/esp-idf/v5.1.5/esp-idf/components/esp_system/ubsan.c:313
+[0m
+[0;33m--- 0x40380001: _vector_table at ??:?
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\hario\\OneDrive\\Desktop\\EPDTEST2\\build\\EPDTEST2.elf', '-ex', 'target remote | "c:\\esp\\tools\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c3 "C:\\Users\\hario\\AppData\\Local\\Temp\\tmpcr81j4dw"', '-ex', 'bt']' returned non-zero exit status 1.
+b"error starting child process '| c:\\esp\\tools\\python_env\\idf5.1_py3.11_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c3 C:\\Users\\hario\\AppData\\Local\\Temp\\tmpcr81j4dw': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x40048b82: software_reset in ROM
+[0m
+[0m

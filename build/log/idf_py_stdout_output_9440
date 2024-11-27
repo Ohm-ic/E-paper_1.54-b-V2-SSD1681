@@ -1,0 +1,150 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42006f16
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1704
+load:0x403cc710,len:0x968
+load:0x403ce710,len:0x2fa8
+entry 0x403cc710
+[0;32mI (24) boot: ESP-IDF v5.1.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 19 2024 15:38:21[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=23520h (144672) map[0m
+[0;32mI (116) esp_image: segment 1: paddr=00033548 vaddr=3fc94e00 size=02c5ch ( 11356) load[0m
+[0;32mI (119) esp_image: segment 2: paddr=000361ac vaddr=40380000 size=09e6ch ( 40556) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9c634h (640564) map[0m
+[0;32mI (235) esp_image: segment 4: paddr=000dc65c vaddr=40389e6c size=0aef4h ( 44788) load[0m
+[0;32mI (250) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (250) boot: Disabling RNG early entropy source...[0m
+[0;32mI (262) cpu_start: Unicore app[0m
+[0;32mI (262) cpu_start: Pro cpu up.[0m
+[0;32mI (270) cpu_start: Pro cpu start user code[0m
+[0;32mI (270) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (271) cpu_start: Application information:[0m
+[0;32mI (273) cpu_start: Project name:     EPDTEST2[0m
+[0;32mI (278) cpu_start: App version:      287bcb8-dirty[0m
+[0;32mI (284) cpu_start: Compile time:     Nov 20 2024 13:06:33[0m
+[0;32mI (290) cpu_start: ELF file SHA256:  7d3c16d3be6b2c4f...[0m
+[0;32mI (296) cpu_start: ESP-IDF:          v5.1.5[0m
+[0;32mI (301) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (306) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (310) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (315) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (322) heap_init: At 3FC9C060 len 00023FA0 (143 KiB): DRAM[0m
+[0;32mI (329) heap_init: At 3FCC0000 len 0001C710 (113 KiB): DRAM/RETENTION[0m
+[0;32mI (336) heap_init: At 3FCDC710 len 00002950 (10 KiB): DRAM/RETENTION/STACK[0m
+[0;32mI (343) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (350) spi_flash: detected chip: generic[0m
+[0;32mI (354) spi_flash: flash io: dio[0m
+[0;32mI (359) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (365) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (372) app_start: Starting scheduler on CPU0[0m
+[0;32mI (377) main_task: Started on CPU0[0m
+[0;32mI (377) main_task: Calling app_main()[0m
+[0;32mI (387) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (387) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (397) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (407) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (927) EPD: E-Paper initialized successfully[0m
+[0;32mI (14777) EPD: The Display is cleared[0m
+[0;32mI (14777) MAIN: Initializing DS3231 RTC[0m
+[0;32mI (14777) DS3231: DS3231 initialized successfully[0m
+[0;32mI (14777) pp: pp rom version: 9387209[0m
+[0;32mI (14777) net80211: net80211 rom version: 9387209[0m
+[0;32mI (14797) wifi:wifi driver task: 3fca5048, prio:23, stack:6656, core=0[0m
+[0;32mI (14797) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (14797) wifi:wifi certification version: v7.0[0m
+[0;32mI (14797) wifi:config NVS flash: enabled[0m
+[0;32mI (14807) wifi:config nano formating: disabled[0m
+[0;32mI (14807) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (14817) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (14817) wifi:Init management short buffer num: 32[0m
+[0;32mI (14817) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (14827) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (14827) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (14837) wifi:Init static rx buffer num: 10[0m
+[0;32mI (14837) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (14847) wifi_init: rx ba win: 6[0m
+[0;32mI (14847) wifi_init: tcpip mbox: 32[0m
+[0;32mI (14847) wifi_init: udp mbox: 6[0m
+[0;32mI (14857) wifi_init: tcp mbox: 6[0m
+[0;32mI (14857) wifi_init: tcp tx win: 5760[0m
+[0;32mI (14867) wifi_init: tcp rx win: 5760[0m
+[0;32mI (14867) wifi_init: tcp mss: 1440[0m
+[0;32mI (14867) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (14877) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (14877) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (14887) phy_init: phy_version 1180,01f2a49,Jun  4 2024,16:34:25[0m
+[0;32mI (14927) wifi:mode : sta (74:4d:bd:e2:98:6c)[0m
+[0;32mI (14927) wifi:enable tsf[0m
+[0;32mI (14937) MAIN: wifi_init_sta finished.[0m
+[0;32mI (15017) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (15017) wifi:state: init -> auth (b0)[0m
+[0;32mI (15027) wifi:state: auth -> assoc (0)[0m
+[0;32mI (15027) wifi:state: assoc -> run (10)[0m
+[0;32mI (15127) wifi:connected with ESPP, aid = 1, channel 11, BW20, bssid = ea:f3:bc:e1:76:3f[0m
+[0;32mI (15127) wifi:security: WPA2-PSK, phy: bgn, rssi: -43[0m
+[0;32mI (15127) wifi:pm start, type: 1[0m
+
+[0;32mI (15127) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (15137) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (15227) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (15227) wifi:<ba-add>idx:0 (ifx:0, ea:f3:bc:e1:76:3f), tid:0, ssn:0, winSize:64[0m
+[0;32mI (16147) esp_netif_handlers: sta ip: 192.168.137.211, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (16147) MAIN: got ip:192.168.137.211[0m
+[0;32mI (16937) MAIN: Initializing SNTP[0m
+[0;32mI (16937) MAIN: Waiting for NTP sync... (0/20)[0m
+[0;32mI (17937) MAIN: Waiting for NTP sync... (1/20)[0m
+[0;32mI (18937) MAIN: Waiting for NTP sync... (2/20)[0m
+[0;32mI (19937) MAIN: Waiting for NTP sync... (3/20)[0m
+[0;32mI (20937) MAIN: Waiting for NTP sync... (4/20)[0m
+[0;32mI (21377) wifi:<ba-add>idx:1 (ifx:0, ea:f3:bc:e1:76:3f), tid:6, ssn:2, winSize:64[0m
+[0;32mI (21777) MAIN: Notification of a time synchronization event[0m
+[0;32mI (21937) MAIN: Using RTC time[0m
+[0;32mI (21937) MAIN: Unix Epoch time: 1732117291[0m
+[0;32mI (21937) MAIN: Formatted time: 20/11/24|15:41[0m
+[0;32mI (21987) EPD: QR code displayed successfully[0m
+[0;32mI (35847) EPD: The Image had been Displayed[0m
+[0;33mW (35847) MAIN: Time drift detected between RTC and system time[0m
+[0;32mI (65847) MAIN: Unix Epoch time: 1732117334[0m
+[0;32mI (65847) MAIN: Formatted time: 20/11/24|15:42[0m
+[0;32mI (65897) EPD: QR code displayed successfully[0m
+[0;32mI (79757) EPD: The Image had been Displayed[0m
+[0;33mW (79757) MAIN: Time drift detected between RTC and system time[0m
+[0;32mI (109757) MAIN: Unix Epoch time: 1732117378[0m
+[0;32mI (109757) MAIN: Formatted time: 20/11/24|15:42[0m
+[0;32mI (109807) EPD: QR code displayed successfully[0m
+[0;32mI (123667) EPD: The Image had been Displayed[0m
+[0;33mW (123667) MAIN: Time drift detected between RTC and system time[0m
+[0;32mI (153667) MAIN: Unix Epoch time: 1732117422[0m
+[0;32mI (153667) MAIN: Formatted time: 20/11/24|15:43[0m
+[0;32mI (153717) EPD: QR code displayed successfully[0m
+[0;32mI (167577) EPD: The Image had been Displayed[0m
+[0;33mW (167577) MAIN: Time drift detected between RTC and system time[0m
+[0;32mI (197577) MAIN: Unix Epoch time: 1732117466[0m
+[0;32mI (197577) MAIN: Formatted time: 20/11/24|15:44[0m
+[0;32mI (197627) EPD: QR code displayed successfully[0m
+[0;32mI (211487) EPD: The Image had been Displayed[0m
+[0;33mW (211487) MAIN: Time drift detected between RTC and system time[0m
+[0;32mI (241487) MAIN: Unix Epoch time: 1732117510[0m
+[0;32mI (241487) MAIN: Formatted time: 20/11/24|15:45[0m
+[0;32mI (241537) EPD: QR code displayed successfully[0m
+[0;32mI (255397) EPD: The Image had been Displayed[0m
+[0;33mW (255397) MAIN: Time drift detected between RTC and system time[0m
+[0;32mI (285397) MAIN: Unix Epoch time: 1732117554[0m
+[0;32mI (285397) MAIN: Formatted time: 20/11/24|15:45[0m
+[0;32mI (285447) EPD: QR code displayed successfully[0m
+[0;32mI (299307) EPD: The Image had been Displayed[0m
+[0;33mW (299307) MAIN: Time drift detected between RTC and system time[0m

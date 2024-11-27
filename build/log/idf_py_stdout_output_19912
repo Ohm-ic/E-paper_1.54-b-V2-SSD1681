@@ -1,13 +1,347 @@
-[1/9] Performing build step for 'bootloader'
-[1/1] C:\WINDOWS\SYSTEM32\cmd.exe /C "cd /D C:\Users\hario\OneDrive\Desktop\EPDTEST2\build\bootloader\esp-idf\esptool_py && c:\esp\tools\python_env\idf5.1_py3.11_env\Scripts\python.exe C:/esp/esp-idf/v5.1.5/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/hario/OneDrive/Desktop/EPDTEST2/build/bootloader/bootloader.bin"
-Bootloader binary size 0x5070 bytes. 0x2f90 bytes (37%) free.
-[2/9] No install step for 'bootloader'
-[3/9] Completed 'bootloader'
-[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
-FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj 
-ccache C:\esp\tools\tools\riscv32-esp-elf\esp-12.2.0_20230208\riscv32-esp-elf\bin\riscv32-esp-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.1.5\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DUNITY_INCLUDE_CONFIG_H -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -IC:/Users/hario/OneDrive/Desktop/EPDTEST2/build/config -IC:/Users/hario/OneDrive/Desktop/EPDTEST2/main -IC:/esp/esp-idf/v5.1.5/esp-idf/components/newlib/platform_include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/freertos/FreeRTOS-Kernel/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/freertos/esp_additions/include/freertos -IC:/esp/esp-idf/v5.1.5/esp-idf/components/freertos/esp_additions/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/freertos/esp_additions/arch/riscv/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_hw_support/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_hw_support/include/soc -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_hw_support/include/soc/esp32c3 -IC:/esp/esp-idf/v5.1.5/esp-idf/components/heap/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/log/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/soc/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/soc/esp32c3 -IC:/esp/esp-idf/v5.1.5/esp-idf/components/soc/esp32c3/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/hal/esp32c3/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/hal/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/hal/platform_port/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_rom/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_rom/include/esp32c3 -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_rom/esp32c3 -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_common/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_system/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_system/port/soc -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_system/port/include/riscv -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_system/port/include/private -IC:/esp/esp-idf/v5.1.5/esp-idf/components/riscv/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/lwip/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/lwip/include/apps -IC:/esp/esp-idf/v5.1.5/esp-idf/components/lwip/include/apps/sntp -IC:/esp/esp-idf/v5.1.5/esp-idf/components/lwip/lwip/src/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/lwip/port/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/lwip/port/freertos/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/lwip/port/esp32xx/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/lwip/port/esp32xx/include/arch -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_ringbuf/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/efuse/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/efuse/esp32c3/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/driver/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/driver/deprecated -IC:/esp/esp-idf/v5.1.5/esp-idf/components/driver/analog_comparator/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/driver/dac/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/driver/gpio/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/driver/gptimer/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/driver/i2c/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/driver/i2s/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/driver/ledc/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/driver/mcpwm/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/driver/parlio/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/driver/pcnt/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/driver/rmt/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/driver/sdio_slave/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/driver/sdmmc/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/driver/sigma_delta/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/driver/spi/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/driver/temperature_sensor/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/driver/touch_sensor/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/driver/twai/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/driver/uart/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/driver/usb_serial_jtag/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_pm/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/mbedtls/port/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/mbedtls/mbedtls/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/mbedtls/mbedtls/library -IC:/esp/esp-idf/v5.1.5/esp-idf/components/mbedtls/esp_crt_bundle/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m -IC:/esp/esp-idf/v5.1.5/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_app_format/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/bootloader_support/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/bootloader_support/bootloader_flash/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_partition/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/app_update/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_mm/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/spi_flash/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/pthread/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_timer/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/app_trace/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_event/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/nvs_flash/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_phy/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_phy/esp32c3/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/vfs/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_netif/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/wpa_supplicant/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/wpa_supplicant/port/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/wpa_supplicant/esp_supplicant/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_coex/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_wifi/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_wifi/wifi_apps/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/unity/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/unity/unity/src -IC:/esp/esp-idf/v5.1.5/esp-idf/components/cmock/CMock/src -IC:/esp/esp-idf/v5.1.5/esp-idf/components/console -IC:/esp/esp-idf/v5.1.5/esp-idf/components/http_parser -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp-tls -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp-tls/esp-tls-crypto -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_adc/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_adc/interface -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_adc/esp32c3/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_adc/deprecated/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_eth/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_gdbstub/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_hid/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/tcp_transport/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_http_client/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_http_server/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_https_ota/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_psram/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_lcd/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_lcd/interface -IC:/esp/esp-idf/v5.1.5/esp-idf/components/protobuf-c/protobuf-c -IC:/esp/esp-idf/v5.1.5/esp-idf/components/protocomm/include/common -IC:/esp/esp-idf/v5.1.5/esp-idf/components/protocomm/include/security -IC:/esp/esp-idf/v5.1.5/esp-idf/components/protocomm/include/transports -IC:/esp/esp-idf/v5.1.5/esp-idf/components/protocomm/include/crypto/srp6a -IC:/esp/esp-idf/v5.1.5/esp-idf/components/protocomm/proto-c -IC:/esp/esp-idf/v5.1.5/esp-idf/components/esp_local_ctrl/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/espcoredump/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/espcoredump/include/port/riscv -IC:/esp/esp-idf/v5.1.5/esp-idf/components/wear_levelling/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/sdmmc/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/fatfs/diskio -IC:/esp/esp-idf/v5.1.5/esp-idf/components/fatfs/vfs -IC:/esp/esp-idf/v5.1.5/esp-idf/components/fatfs/src -IC:/esp/esp-idf/v5.1.5/esp-idf/components/idf_test/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/idf_test/include/esp32c3 -IC:/esp/esp-idf/v5.1.5/esp-idf/components/ieee802154/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/json/cJSON -IC:/esp/esp-idf/v5.1.5/esp-idf/components/mqtt/esp-mqtt/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/spiffs/include -IC:/esp/esp-idf/v5.1.5/esp-idf/components/wifi_provisioning/include -march=rv32imc_zicsr_zifencei  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -nostartfiles -Og -fmacro-prefix-map=C:/Users/hario/OneDrive/Desktop/EPDTEST2=. -fmacro-prefix-map=C:/esp/esp-idf/v5.1.5/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -c C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/main.c
-C:/Users/hario/OneDrive/Desktop/EPDTEST2/main/main.c:25:10: fatal error: user_variables.h: No such file or directory
-   25 | #include "user_variables.h"
-      |          ^~~~~~~~~~~~~~~~~~
-compilation terminated.
-ninja: build stopped: subcommand failed.
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038d1d0
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1704
+load:0x403cc710,len:0x968
+load:0x403ce710,len:0x2fa8
+entry 0x403cc710
+[0;32mI (24) boot: ESP-IDF v5.1.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 19 2024 15:38:21[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=23618h (144920) map[0m
+[0;32mI (116) esp_image: segment 1: paddr=00033640 vaddr=3fc94e00 size=02c5ch ( 11356) load[0m
+[0;32mI (119) esp_image: segment 2: paddr=000362a4 vaddr=40380000 size=09d74h ( 40308) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9c6e4h (640740) map[0m
+[0;32mI (235) esp_image: segment 4: paddr=000dc70c vaddr=40389d74 size=0afech ( 45036) load[0m
+[0;32mI (250) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (250) boot: Disabling RNG early entropy source...[0m
+[0;32mI (262) cpu_start: Unicore app[0m
+[0;32mI (262) cpu_start: Pro cpu up.[0m
+[0;32mI (270) cpu_start: Pro cpu start user code[0m
+[0;32mI (270) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (271) cpu_start: Application information:[0m
+[0;32mI (274) cpu_start: Project name:     EPDTEST2[0m
+[0;32mI (279) cpu_start: App version:      287bcb8-dirty[0m
+[0;32mI (284) cpu_start: Compile time:     Nov 20 2024 13:06:33[0m
+[0;32mI (290) cpu_start: ELF file SHA256:  79e820af56dbf81a...[0m
+[0;32mI (296) cpu_start: ESP-IDF:          v5.1.5[0m
+[0;32mI (301) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (306) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (310) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (315) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (322) heap_init: At 3FC9C060 len 00023FA0 (143 KiB): DRAM[0m
+[0;32mI (329) heap_init: At 3FCC0000 len 0001C710 (113 KiB): DRAM/RETENTION[0m
+[0;32mI (336) heap_init: At 3FCDC710 len 00002950 (10 KiB): DRAM/RETENTION/STACK[0m
+[0;32mI (343) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (350) spi_flash: detected chip: generic[0m
+[0;32mI (354) spi_flash: flash io: dio[0m
+[0;32mI (359) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (365) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (372) app_start: Starting scheduler on CPU0[0m
+[0;32mI (377) main_task: Started on CPU0[0m
+[0;32mI (377) main_task: Calling app_main()[0m
+[0;32mI (387) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (387) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (397) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (407) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (927) EPD: E-Paper initialized successfully[0m
+[0;32mI (14777) EPD: The Display is cleared[0m
+[0;32mI (14777) MAIN: Initializing DS3231 RTC[0m
+[0;32mI (14777) DS3231: DS3231 initialized successfully[0m
+[0;32mI (14777) MAIN: Starting WiFi connection[0m
+[0;32mI (14777) pp: pp rom version: 9387209[0m
+[0;32mI (14787) net80211: net80211 rom version: 9387209[0m
+[0;32mI (14797) wifi:wifi driver task: 3fca5048, prio:23, stack:6656, core=0[0m
+[0;32mI (14797) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (14797) wifi:wifi certification version: v7.0[0m
+[0;32mI (14807) wifi:config NVS flash: enabled[0m
+[0;32mI (14807) wifi:config nano formating: disabled[0m
+[0;32mI (14817) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (14817) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (14817) wifi:Init management short buffer num: 32[0m
+[0;32mI (14827) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (14827) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (14837) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (14837) wifi:Init static rx buffer num: 10[0m
+[0;32mI (14847) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (14847) wifi_init: rx ba win: 6[0m
+[0;32mI (14847) wifi_init: tcpip mbox: 32[0m
+[0;32mI (14857) wifi_init: udp mbox: 6[0m
+[0;32mI (14857) wifi_init: tcp mbox: 6[0m
+[0;32mI (14867) wifi_init: tcp tx win: 5760[0m
+[0;32mI (14867) wifi_init: tcp rx win: 5760[0m
+[0;32mI (14867) wifi_init: tcp mss: 1440[0m
+[0;32mI (14877) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (14877) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (14887) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (14897) phy_init: phy_version 1180,01f2a49,Jun  4 2024,16:34:25[0m
+[0;32mI (14937) wifi:mode : sta (74:4d:bd:e2:98:6c)[0m
+[0;32mI (14937) wifi:enable tsf[0m
+[0;32mI (14937) MAIN: wifi_init_sta finished.[0m
+[0;32mI (14977) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (14987) wifi:state: init -> auth (b0)[0m
+[0;32mI (14987) wifi:state: auth -> assoc (0)[0m
+[0;32mI (14987) wifi:state: assoc -> run (10)[0m
+[0;32mI (15007) wifi:connected with ESPP, aid = 1, channel 11, BW20, bssid = ea:f3:bc:e1:76:3f[0m
+[0;32mI (15007) wifi:security: WPA2-PSK, phy: bgn, rssi: -46[0m
+[0;32mI (15007) wifi:pm start, type: 1[0m
+
+[0;32mI (15007) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (15017) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (15077) wifi:<ba-add>idx:0 (ifx:0, ea:f3:bc:e1:76:3f), tid:0, ssn:0, winSize:64[0m
+[0;32mI (15087) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (16027) esp_netif_handlers: sta ip: 192.168.137.100, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (16027) MAIN: got ip:192.168.137.100[0m
+[0;32mI (16027) MAIN: connected to ap[0m
+[0;32mI (16027) MAIN: WiFi connected, initializing SNTP[0m
+[0;32mI (16037) MAIN: Initializing SNTP[0m
+[0;32mI (16037) MAIN: Waiting for system time to be set... (1/10)[0m
+[0;32mI (17637) wifi:<ba-add>idx:1 (ifx:0, ea:f3:bc:e1:76:3f), tid:6, ssn:2, winSize:64[0m
+[0;32mI (18047) MAIN: Waiting for system time to be set... (2/10)[0m
+[0;32mI (18367) MAIN: Notification of a time synchronization event[0m
+[0;32mI (20047) MAIN: Unix Epoch time: 1732088976[0m
+[0;32mI (20047) MAIN: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732088976}
+[0m
+[0;32mI (20047) MAIN: Indian Standard Time: 20/11/24|13:19[0m
+[0;32mI (20107) EPD: QR code displayed successfully[0m
+[0;32mI (33967) EPD: The Image had been Displayed[0m
+[0;32mI (63927) wifi:state: run -> init (7a0)[0m
+[0;32mI (63977) MAIN: Unix Epoch time: 1732089020[0m
+[0;32mI (63977) MAIN: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732089020}
+[0m
+[0;32mI (63977) MAIN: Indian Standard Time: 20/11/24|13:20[0m
+[0;32mI (64037) wifi:pm stop, total sleep time: 24799258 us / 49023061 us[0m
+
+[0;32mI (64037) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (64037) wifi:<ba-del>idx:1, tid:6[0m
+[0;32mI (64037) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (64047) MAIN: retry to connect to the AP[0m
+[0;32mI (64047) MAIN: connect to the AP fail[0m
+[0;32mI (64097) EPD: QR code displayed successfully[0m
+[0;32mI (66457) MAIN: retry to connect to the AP[0m
+[0;32mI (66457) MAIN: connect to the AP fail[0m
+[0;32mI (68857) MAIN: retry to connect to the AP[0m
+[0;32mI (68857) MAIN: connect to the AP fail[0m
+[0;32mI (71267) MAIN: retry to connect to the AP[0m
+[0;32mI (71267) MAIN: connect to the AP fail[0m
+[0;32mI (73677) MAIN: retry to connect to the AP[0m
+[0;32mI (73677) MAIN: connect to the AP fail[0m
+[0;32mI (76087) MAIN: connect to the AP fail[0m
+[0;32mI (77957) EPD: The Image had been Displayed[0m
+[0;32mI (107957) MAIN: Unix Epoch time: 1732089064[0m
+[0;32mI (107957) MAIN: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732089064}
+[0m
+[0;32mI (107957) MAIN: Indian Standard Time: 20/11/24|13:21[0m
+[0;32mI (108017) EPD: QR code displayed successfully[0m
+[0;32mI (121877) EPD: The Image had been Displayed[0m
+[0;32mI (151877) MAIN: Unix Epoch time: 1732089108[0m
+[0;32mI (151877) MAIN: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732089108}
+[0m
+[0;32mI (151877) MAIN: Indian Standard Time: 20/11/24|13:21[0m
+[0;32mI (151937) EPD: QR code displayed successfully[0m
+[0;32mI (165797) EPD: The Image had been Displayed[0m
+[0;32mI (195797) MAIN: Unix Epoch time: 1732089152[0m
+[0;32mI (195797) MAIN: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732089152}
+[0m
+[0;32mI (195797) MAIN: Indian Standard Time: 20/11/24|13:22[0m
+[0;32mI (195857) EPD: QR code displayed successfully[0m
+[0;32mI (209717) EPD: The Image had been Displayed[0m
+[0;32mI (239717) MAIN: Unix Epoch time: 1732089196[0m
+[0;32mI (239717) MAIN: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732089196}
+[0m
+[0;32mI (239717) MAIN: Indian Standard Time: 20/11/24|13:23[0m
+[0;32mI (239777) EPD: QR code displayed successfully[0m
+[0;32mI (253637) EPD: The Image had been Displayed[0m
+[0;32mI (283637) MAIN: Unix Epoch time: 1732089239[0m
+[0;32mI (283637) MAIN: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732089239}
+[0m
+[0;32mI (283637) MAIN: Indian Standard Time: 20/11/24|13:23[0m
+[0;32mI (283697) EPD: QR code displayed successfully[0m
+[0;32mI (297557) EPD: The Image had been Displayed[0m
+[0;32mI (327557) MAIN: Unix Epoch time: 1732089283[0m
+[0;32mI (327557) MAIN: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732089283}
+[0m
+[0;32mI (327557) MAIN: Indian Standard Time: 20/11/24|13:24[0m
+[0;32mI (327617) EPD: QR code displayed successfully[0m
+[0;32mI (341477) EPD: The Image had been Displayed[0m
+[0;32mI (371477) MAIN: Unix Epoch time: 1732089327[0m
+[0;32mI (371477) MAIN: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732089327}
+[0m
+[0;32mI (371477) MAIN: Indian Standard Time: 20/11/24|13:25[0m
+[0;32mI (371537) EPD: QR code displayed successfully[0m
+[0;32mI (385397) EPD: The Image had been Displayed[0m
+[0;32mI (934) EPD: E-Paper initialized successfully[0m
+[0;32mI (14784) EPD: The Display is cleared[0m
+[0;32mI (14784) MAIN: Initializing DS3231 RTC[0m
+[0;32mI (14784) DS3231: DS3231 initialized successfully[0m
+[0;32mI (14784) MAIN: Starting WiFi connection[0m
+[0;32mI (14784) pp: pp rom version: 9387209[0m
+[0;32mI (14794) net80211: net80211 rom version: 9387209[0m
+[0;32mI (14804) wifi:wifi driver task: 3fca50cc, prio:23, stack:6656, core=0[0m
+[0;32mI (14804) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (14804) wifi:wifi certification version: v7.0[0m
+[0;32mI (14814) wifi:config NVS flash: enabled[0m
+[0;32mI (14814) wifi:config nano formating: disabled[0m
+[0;32mI (14824) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (14824) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (14824) wifi:Init management short buffer num: 32[0m
+[0;32mI (14834) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (14834) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (14844) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (14844) wifi:Init static rx buffer num: 10[0m
+[0;32mI (14854) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (14854) wifi_init: rx ba win: 6[0m
+[0;32mI (14854) wifi_init: tcpip mbox: 32[0m
+[0;32mI (14864) wifi_init: udp mbox: 6[0m
+[0;32mI (14864) wifi_init: tcp mbox: 6[0m
+[0;32mI (14874) wifi_init: tcp tx win: 5760[0m
+[0;32mI (14874) wifi_init: tcp rx win: 5760[0m
+[0;32mI (14874) wifi_init: tcp mss: 1440[0m
+[0;32mI (14884) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (14884) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (14894) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (14904) phy_init: phy_version 1180,01f2a49,Jun  4 2024,16:34:25[0m
+[0;32mI (14944) wifi:mode : sta (74:4d:bd:e2:98:6c)[0m
+[0;32mI (14944) wifi:enable tsf[0m
+[0;32mI (14944) MAIN: wifi_init_sta finished.[0m
+[0;32mI (17354) MAIN: retry to connect to the AP[0m
+[0;32mI (17354) MAIN: connect to the AP fail[0m
+[0;32mI (19764) MAIN: retry to connect to the AP[0m
+[0;32mI (19764) MAIN: connect to the AP fail[0m
+[0;32mI (22174) MAIN: retry to connect to the AP[0m
+[0;32mI (22174) MAIN: connect to the AP fail[0m
+[0;32mI (24574) MAIN: retry to connect to the AP[0m
+[0;32mI (24574) MAIN: connect to the AP fail[0m
+[0;32mI (26984) MAIN: retry to connect to the AP[0m
+[0;32mI (26984) MAIN: connect to the AP fail[0m
+[0;32mI (29394) MAIN: connect to the AP fail[0m
+[0;32mI (29394) MAIN: Failed to connect to ap[0m
+[0;32mI (49394) MAIN: WiFi not connected, using RTC time[0m
+[0;32mI (49394) MAIN: System time set from RTC[0m
+[0;32mI (49394) MAIN: Unix Epoch time: 946762515[0m
+[0;32mI (49394) MAIN: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 946762515}
+[0m
+[0;32mI (49404) MAIN: Indian Standard Time: 02/01/24|03:05[0m
+[0;32mI (49464) EPD: QR code displayed successfully[0m
+[0;32mI (63324) EPD: The Image had been Displayed[0m
+[0;32mI (93324) MAIN: Unix Epoch time: 946762558[0m
+[0;32mI (93324) MAIN: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 946762558}
+[0m
+[0;32mI (93324) MAIN: Indian Standard Time: 02/01/24|03:05[0m
+[0;32mI (93384) EPD: QR code displayed successfully[0m
+[0;32mI (107244) EPD: The Image had been Displayed[0m
+[0;32mI (241) esp_image: segment 4: paddr=000dc70c vaddr=40389d[0;32mI (939) EPD: E-Paper initialized successfully[0m
+[0;32mI (14789) EPD: The Display is cleared[0m
+[0;32mI (14789) MAIN: Initializing DS3231 RTC[0m
+[0;32mI (14789) DS3231: DS3231 initialized successfully[0m
+[0;32mI (14789) MAIN: Starting WiFi connection[0m
+[0;32mI (14789) pp: pp rom version: 9387209[0m
+[0;32mI (14799) net80211: net80211 rom version: 9387209[0m
+[0;32mI (14809) wifi:wifi driver task: 3fca50cc, prio:23, stack:6656, core=0[0m
+[0;32mI (14809) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (14809) wifi:wifi certification version: v7.0[0m
+[0;32mI (14819) wifi:config NVS flash: enabled[0m
+[0;32mI (14819) wifi:config nano formating: disabled[0m
+[0;32mI (14829) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (14829) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (14829) wifi:Init management short buffer num: 32[0m
+[0;32mI (14839) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (14839) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (14849) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (14849) wifi:Init static rx buffer num: 10[0m
+[0;32mI (14859) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (14859) wifi_init: rx ba win: 6[0m
+[0;32mI (14859) wifi_init: tcpip mbox: 32[0m
+[0;32mI (14869) wifi_init: udp mbox: 6[0m
+[0;32mI (14869) wifi_init: tcp mbox: 6[0m
+[0;32mI (14879) wifi_init: tcp tx win: 5760[0m
+[0;32mI (14879) wifi_init: tcp rx win: 5760[0m
+[0;32mI (14879) wifi_init: tcp mss: 1440[0m
+[0;32mI (14889) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (14889) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (14899) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (14909) phy_init: phy_version 1180,01f2a49,Jun  4 2024,16:34:25[0m
+[0;32mI (14949) wifi:mode : sta (74:4d:bd:e2:98:6c)[0m
+[0;32mI (14949) wifi:enable tsf[0m
+[0;32mI (14949) MAIN: wifi_init_sta finished.[0m
+[0;32mI (14959) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (14959) wifi:state: init -> auth (b0)[0m
+[0;32mI (14969) wifi:state: auth -> assoc (0)[0m
+[0;32mI (14969) wifi:state: assoc -> run (10)[0m
+[0;32mI (14989) wifi:connected with ESPP, aid = 1, channel 11, BW20, bssid = ea:f3:bc:e1:76:3f[0m
+[0;32mI (14989) wifi:security: WPA2-PSK, phy: bgn, rssi: -45[0m
+[0;32mI (14999) wifi:pm start, type: 1[0m
+
+[0;32mI (14999) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (15009) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (15049) wifi:<ba-add>idx:0 (ifx:0, ea:f3:bc:e1:76:3f), tid:0, ssn:0, winSize:64[0m
+[0;32mI (15059) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (16019) esp_netif_handlers: sta ip: 192.168.137.130, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (16019) MAIN: got ip:192.168.137.130[0m
+[0;32mI (16019) MAIN: connected to ap[0m
+[0;32mI (16019) MAIN: WiFi connected, initializing SNTP[0m
+[0;32mI (16029) MAIN: Initializing SNTP[0m
+[0;32mI (16029) MAIN: Waiting for system time to be set... (1/10)[0m
+[0;32mI (18039) MAIN: Waiting for system time to be set... (2/10)[0m
+[0;32mI (18369) wifi:<ba-add>idx:1 (ifx:0, ea:f3:bc:e1:76:3f), tid:6, ssn:2, winSize:64[0m
+[0;32mI (18749) MAIN: Notification of a time synchronization event[0m
+[0;32mI (20039) MAIN: Unix Epoch time: 1732089494[0m
+[0;32mI (20039) MAIN: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732089494}
+[0m
+[0;32mI (20039) MAIN: Indian Standard Time: 20/11/24|13:28[0m
+[0;32mI (20099) EPD: QR code displayed successfully[0m
+[0;32mI (33959) EPD: The Image had been Displayed[0m
+[0;32mI (63959) MAIN: Unix Epoch time: 1732089538[0m
+[0;32mI (63959) MAIN: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732089538}
+[0m
+[0;32mI (63959) MAIN: Indian Standard Time: 20/11/24|13:28[0m
+[0;32mI (64019) EPD: QR code displayed successfully[0m
+[0;32mI (77879) EPD: The Image had been Displayed[0m
+[0;32mI (107879) MAIN: Unix Epoch time: 1732089582[0m
+[0;32mI (107879) MAIN: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732089582}
+[0m
+[0;32mI (107879) MAIN: Indian Standard Time: 20/11/24|13:29[0m
+[0;32mI (107939) EPD: QR code displayed successfully[0m
+[0;32mI (121799) EPD: The Image had been Displayed[0m
+[0;32mI (151799) MAIN: Unix Epoch time: 1732089626[0m
+[0;32mI (151799) MAIN: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732089626}
+[0m
+[0;32mI (151799) MAIN: Indian Standard Time: 20/11/24|13:30[0m
+[0;32mI (151859) EPD: QR code displayed successfully[0m
+[0;32mI (165719) EPD: The Image had been Displayed[0m
+[0;32mI (195719) MAIN: Unix Epoch time: 1732089670[0m
+[0;32mI (195719) MAIN: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732089670}
+[0m
+[0;32mI (195719) MAIN: Indian Standard Time: 20/11/24|13:31[0m
+[0;32mI (195779) EPD: QR code displayed successfully[0m
+[0;32mI (209639) EPD: The Image had been Displayed[0m
+[0;32mI (239639) MAIN: Unix Epoch time: 1732089714[0m
+[0;32mI (239639) MAIN: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732089714}
+[0m
+[0;32mI (239639) MAIN: Indian Standard Time: 20/11/24|13:31[0m
+[0;32mI (239699) EPD: QR code displayed successfully[0m
+[0;32mI (253559) EPD: The Image had been Displayed[0m
+[0;32mI (283559) MAIN: Unix Epoch time: 1732089758[0m
+[0;32mI (283559) MAIN: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732089758}
+[0m
+[0;32mI (283559) MAIN: Indian Standard Time: 20/11/24|13:32[0m
+[0;32mI (283619) EPD: QR code displayed successfully[0m
+[0;32mI (297479) EPD: The Image had been Displayed[0m
+[0;32mI (327479) MAIN: Unix Epoch time: 1732089802[0m
+[0;32mI (327479) MAIN: Unix time as String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Unix_time": 1732089802}
+[0m
+[0;32mI (327479) MAIN: Indian Standard Time: 20/11/24|13:33[0m
+[0;32mI (327539) EPD: QR code displayed successfully[0m

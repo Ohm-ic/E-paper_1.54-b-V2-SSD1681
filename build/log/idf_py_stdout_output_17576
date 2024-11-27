@@ -1,0 +1,423 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42006f14
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1704
+load:0x403cc710,len:0x968
+load:0x403ce710,len:0x2fa8
+entry 0x403cc710
+[0;32mI (24) boot: ESP-IDF v5.1.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 19 2024 15:38:21[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=23618h (144920) map[0m
+[0;32mI (116) esp_image: segment 1: paddr=00033640 vaddr=3fc94e00 size=02c5ch ( 11356) load[0m
+[0;32mI (119) esp_image: segment 2: paddr=000362a4 vaddr=40380000 size=09d74h ( 40308) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9c6d4h (640724) map[0m
+[0;32mI (235) esp_image: segment 4: paddr=000dc6fc vaddr=40389d74 size=0afech ( 45036) load[0m
+[0;32mI (250) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (250) boot: Disabling RNG early entropy source...[0m
+[0;32mI (262) cpu_start: Unicore app[0m
+[0;32mI (262) cpu_start: Pro cpu up.[0m
+[0;32mI (270) cpu_start: Pro cpu start user code[0m
+[0;32mI (271) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (271) cpu_start: Application information:[0m
+[0;32mI (274) cpu_start: Project name:     EPDTEST2[0m
+[0;32mI (279) cpu_start: App version:      287bcb8-dirty[0m
+[0;32mI (284) cpu_start: Compile time:     Nov 20 2024 13:06:33[0m
+[0;32mI (290) cpu_start: ELF file SHA256:  45a6e395e6606a87...[0m
+[0;32mI (296) cpu_start: ESP-IDF:          v5.1.5[0m
+[0;32mI (301) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (306) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (311) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (315) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (323) heap_init: At 3FC9C060 len 00023FA0 (143 KiB): DRAM[0m
+[0;32mI (329) heap_init: At 3FCC0000 len 0001C710 (113 KiB): DRAM/RETENTION[0m
+[0;32mI (336) heap_init: At 3FCDC710 len 00002950 (10 KiB): DRAM/RETENTION/STACK[0m
+[0;32mI (343) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (350) spi_flash: detected chip: generic[0m
+[0;32mI (354) spi_flash: flash io: dio[0m
+[0;32mI (359) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (365) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (372) app_start: Starting scheduler on CPU0[0m
+[0;32mI (377) main_task: Started on CPU0[0m
+[0;32mI (377) main_task: Calling app_main()[0m
+[0;32mI (387) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (387) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (397) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (407) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (927) EPD: E-Paper initialized successfully[0m
+[0;32mI (14777) EPD: The Display is cleared[0m
+[0;32mI (14777) MAIN: Initializing DS3231 RTC[0m
+[0;31mE (14777) i2c: i2c_set_pin(928): scl gpio number error[0m
+[0;31mE (14777) DS3231: Failed to initialize I2C master[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x420086a0
+file: "./main/main.c" line 176
+func: time_sync_init
+expression: ds3231_init(I2C_MASTER_SDA_IO, I2C_MASTER_SCL_IO)
+
+abort() was called at PC 0x4038837b on core 0
+Core  0 register dump:
+MEPC    : 0x40380700  RA      : 0x40388386  SP      : 0x3fc9ece0  GP      : 0x3fc95600  
+TP      : 0x3fc7c1ac  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000004  S1      : 0x3fc9ed44  A0      : 0x3fc9ed0c  A1      : 0x3fc9ed42  
+A2      : 0x00000000  A3      : 0x3fc9ed39  A4      : 0x00000001  A5      : 0x3fc9c000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fc9ece0: 0x3c0a5f64 0x420086a4 0x3fc9ed40 0x4038fe60 0x3c0a6524 0x3c0a651c 0x00000001 0x3fc96f38
+3fc9ed00: 0x3fc9ed44 0x3fc96f54 0x3fc9ed40 0x726f6261 0x20292874 0x20736177 0x6c6c6163 0x61206465
+3fc9ed20: 0x43502074 0x34783020 0x38383330 0x20623733 0x63206e6f 0x2065726f 0x00000030 0x00000000
+3fc9ed40: 0x00000030 0x38333034 0x62373338 0x00000000 0x00000000 0x00000102 0x00000000 0x4038837e
+3fc9ed60: 0x3c0a5e34 0x00000179 0x00000000 0x420086a4 0x000000c8 0x3fc9ee7c 0x0000000a 0x42009168
+3fc9ed80: 0x00000000 0x3fc9ed5f 0x00000019 0x000039b9 0x3c0a6604 0x00000179 0x00000001 0x3fca00bc
+3fc9eda0: 0x00000000 0x00000000 0x00000000 0x420088ce 0x00000000 0x00000000 0x3fc9cca8 0x40388a4e
+3fc9edc0: 0xa5a5a5a5 0x0000001f 0x00000000 0x00000000 0x00001800 0x00000010 0x00000010 0x40380a68
+3fc9ede0: 0x3fc9f644 0x00000010 0x3fc9cca8 0x3fc9ee7c 0x3c0a33fc 0x3c0a337c 0x3c0a337c 0x00000000
+3fc9ee00: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x3fc9ee7c
+3fc9ee20: 0x3c0a33fc 0x3c0a337c 0x00000003 0x4209c69a 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9ee40: 0x00000000 0x00000000 0x3c0a3000 0x4038ecba 0x3fc9f85c 0x3fc9f85c 0x3fc9ee94 0x3fc9ee7c
+3fc9ee60: 0x00000000 0x00000000 0x00000001 0x4209ba86 0x00000000 0x3fc9f85c 0x00000000 0x3fca0240
+3fc9ee80: 0x3c0a337c 0x00000179 0x3c0a3000 0x4209ba8a 0x00000000 0x00001388 0x00000001 0x00000000
+3fc9eea0: 0x00000000 0x00000000 0x00000000 0x4038ab34 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9eec0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc9eee0: 0xa5a5a5a5 0x00000154 0x3fc9ebf0 0x000005a0 0x3fc97c08 0x3fc97c08 0x3fc9eee8 0x3fc97c00
+3fc9ef00: 0x00000018 0x3fc9ef08 0xffffffff 0x3fc9eee8 0x00000000 0x00000001 0x3fc9dee4 0x6e69616d
+3fc9ef20: 0x3fc9ef00 0x3fc9ef1c 0x00000000 0x00000000 0x3fc9eee0 0x00000001 0x00000000 0x00000000
+3fc9ef40: 0x00000000 0x00000000 0x3fc9c744 0x3fc9c7ac 0x3fc9c814 0x00000000 0x00000000 0x00000001
+3fc9ef60: 0x00000000 0x00000000 0x00000000 0x42088686 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9ef80: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9efa0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9efc0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9efe0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9f000: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9f020: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x3f000000 0x00000600
+3fc9f040: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc9f060: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc9f080: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc9f0a0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc9f0c0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: 45a6e395e6606a87
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048b82
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1704
+load:0x403cc710,len:0x968
+load:0x403ce710,len:0x2fa8
+entry 0x403cc710
+[0;32mI (24) boot: ESP-IDF v5.1.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 19 2024 15:38:21[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=23618h (144920) map[0m
+[0;32mI (116) esp_image: segment 1: paddr=00033640 vaddr=3fc94e00 size=02c5ch ( 11356) load[0m
+[0;32mI (118) esp_image: segment 2: paddr=000362a4 vaddr=40380000 size=09d74h ( 40308) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9c6d4h (640724) map[0m
+[0;32mI (234) esp_image: segment 4: paddr=000dc6fc vaddr=40389d74 size=0afech ( 45036) load[0m
+[0;32mI (250) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (250) boot: Disabling RNG early entropy source...[0m
+[0;32mI (261) cpu_start: Unicore app[0m
+[0;32mI (262) cpu_start: Pro cpu up.[0m
+[0;32mI (270) cpu_start: Pro cpu start user code[0m
+[0;32mI (270) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (270) cpu_start: Application information:[0m
+[0;32mI (273) cpu_start: Project name:     EPDTEST2[0m
+[0;32mI (278) cpu_start: App version:      287bcb8-dirty[0m
+[0;32mI (284) cpu_start: Compile time:     Nov 20 2024 13:06:33[0m
+[0;32mI (290) cpu_start: ELF file SHA256:  45a6e395e6606a87...[0m
+[0;32mI (296) cpu_start: ESP-IDF:          v5.1.5[0m
+[0;32mI (300) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (305) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (310) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (315) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (322) heap_init: At 3FC9C060 len 00023FA0 (143 KiB): DRAM[0m
+[0;32mI (328) heap_init: At 3FCC0000 len 0001C710 (113 KiB): DRAM/RETENTION[0m
+[0;32mI (335) heap_init: At 3FCDC710 len 00002950 (10 KiB): DRAM/RETENTION/STACK[0m
+[0;32mI (343) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (350) spi_flash: detected chip: generic[0m
+[0;32mI (354) spi_flash: flash io: dio[0m
+[0;32mI (358) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (364) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (372) app_start: Starting scheduler on CPU0[0m
+[0;32mI (377) main_task: Started on CPU0[0m
+[0;32mI (377) main_task: Calling app_main()[0m
+[0;32mI (387) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (387) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (397) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (407) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (927) EPD: E-Paper initialized successfully[0m
+[0;32mI (14777) EPD: The Display is cleared[0m
+[0;32mI (14777) MAIN: Initializing DS3231 RTC[0m
+[0;31mE (14777) i2c: i2c_set_pin(928): scl gpio number error[0m
+[0;31mE (14777) DS3231: Failed to initialize I2C master[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x420086a0
+file: "./main/main.c" line 176
+func: time_sync_init
+expression: ds3231_init(I2C_MASTER_SDA_IO, I2C_MASTER_SCL_IO)
+
+abort() was called at PC 0x4038837b on core 0
+Core  0 register dump:
+MEPC    : 0x40380700  RA      : 0x40388386  SP      : 0x3fc9ece0  GP      : 0x3fc95600  
+TP      : 0x3fc7c1ac  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000004  S1      : 0x3fc9ed44  A0      : 0x3fc9ed0c  A1      : 0x3fc9ed42  
+A2      : 0x00000000  A3      : 0x3fc9ed39  A4      : 0x00000001  A5      : 0x3fc9c000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fc9ece0: 0x3c0a5f64 0x420086a4 0x3fc9ed40 0x4038fe60 0x3c0a6524 0x3c0a651c 0x00000001 0x3fc96f38
+3fc9ed00: 0x3fc9ed44 0x3fc96f54 0x3fc9ed40 0x726f6261 0x20292874 0x20736177 0x6c6c6163 0x61206465
+3fc9ed20: 0x43502074 0x34783020 0x38383330 0x20623733 0x63206e6f 0x2065726f 0x00000030 0x00000000
+3fc9ed40: 0x00000030 0x38333034 0x62373338 0x00000000 0x00000000 0x00000102 0x00000000 0x4038837e
+3fc9ed60: 0x3c0a5e34 0x00000179 0x00000000 0x420086a4 0x000000c8 0x3fc9ee7c 0x0000000a 0x42009168
+3fc9ed80: 0x00000000 0x3fc9ed5f 0x00000019 0x000039b9 0x3c0a6604 0x00000179 0x00000001 0x3fca00bc
+3fc9eda0: 0x00000000 0x00000000 0x00000000 0x420088ce 0x00000000 0x00000000 0x3fc9cca8 0x40388a4e
+3fc9edc0: 0xa5a5a5a5 0x0000001f 0x00000000 0x00000000 0x00001800 0x00000010 0x00000010 0x40380a68
+3fc9ede0: 0x3fc9f644 0x00000010 0x3fc9cca8 0x3fc9ee7c 0x3c0a33fc 0x3c0a337c 0x3c0a337c 0x00000000
+3fc9ee00: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x3fc9ee7c
+3fc9ee20: 0x3c0a33fc 0x3c0a337c 0x00000003 0x4209c69a 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9ee40: 0x00000000 0x00000000 0x3c0a3000 0x4038ecba 0x3fc9f85c 0x3fc9f85c 0x3fc9ee94 0x3fc9ee7c
+3fc9ee60: 0x00000000 0x00000000 0x00000001 0x4209ba86 0x00000000 0x3fc9f85c 0x00000000 0x3fca0240
+3fc9ee80: 0x3c0a337c 0x00000179 0x3c0a3000 0x4209ba8a 0x00000000 0x00001388 0x00000001 0x00000000
+3fc9eea0: 0x00000000 0x00000000 0x00000000 0x4038ab34 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9eec0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc9eee0: 0xa5a5a5a5 0x00000154 0x3fc9ebf0 0x000005a0 0x3fc97c08 0x3fc97c08 0x3fc9eee8 0x3fc97c00
+3fc9ef00: 0x00000018 0x3fc9ef08 0xffffffff 0x3fc9eee8 0x00000000 0x00000001 0x3fc9dee4 0x6e69616d
+3fc9ef20: 0x3fc9ef00 0x3fc9ef1c 0x00000000 0x00000000 0x3fc9eee0 0x00000001 0x00000000 0x00000000
+3fc9ef40: 0x00000000 0x00000000 0x3fc9c744 0x3fc9c7ac 0x3fc9c814 0x00000000 0x00000000 0x00000001
+3fc9ef60: 0x00000000 0x00000000 0x00000000 0x42088686 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9ef80: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9efa0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9efc0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9efe0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9f000: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9f020: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x3f000000 0x00000600
+3fc9f040: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc9f060: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc9f080: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc9f0a0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc9f0c0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: 45a6e395e6606a87
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048b82
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1704
+load:0x403cc710,len:0x968
+load:0x403ce710,len:0x2fa8
+entry 0x403cc710
+[0;32mI (24) boot: ESP-IDF v5.1.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 19 2024 15:38:21[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=23618h (144920) map[0m
+[0;32mI (116) esp_image: segment 1: paddr=00033640 vaddr=3fc94e00 size=02c5ch ( 11356) load[0m
+[0;32mI (118) esp_image: segment 2: paddr=000362a4 vaddr=40380000 size=09d74h ( 40308) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9c6d4h (640724) map[0m
+[0;32mI (234) esp_image: segment 4: paddr=000dc6fc vaddr=40389d74 size=0afech ( 45036) load[0m
+[0;32mI (250) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (250) boot: Disabling RNG early entropy source...[0m
+[0;32mI (261) cpu_start: Unicore app[0m
+[0;32mI (262) cpu_start: Pro cpu up.[0m
+[0;32mI (270) cpu_start: Pro cpu start user code[0m
+[0;32mI (270) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (270) cpu_start: Application information:[0m
+[0;32mI (273) cpu_start: Project name:     EPDTEST2[0m
+[0;32mI (278) cpu_start: App version:      287bcb8-dirty[0m
+[0;32mI (284) cpu_start: Compile time:     Nov 20 2024 13:06:33[0m
+[0;32mI (290) cpu_start: ELF file SHA256:  45a6e395e6606a87...[0m
+[0;32mI (296) cpu_start: ESP-IDF:          v5.1.5[0m
+[0;32mI (300) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (305) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (310) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (315) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (322) heap_init: At 3FC9C060 len 00023FA0 (143 KiB): DRAM[0m
+[0;32mI (328) heap_init: At 3FCC0000 len 0001C710 (113 KiB): DRAM/RETENTION[0m
+[0;32mI (335) heap_init: At 3FCDC710 len 00002950 (10 KiB): DRAM/RETENTION/STACK[0m
+[0;32mI (343) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (350) spi_flash: detected chip: generic[0m
+[0;32mI (354) spi_flash: flash io: dio[0m
+[0;32mI (358) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (364) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (372) app_start: Starting scheduler on CPU0[0m
+[0;32mI (377) main_task: Started on CPU0[0m
+[0;32mI (377) main_task: Calling app_main()[0m
+[0;32mI (387) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (387) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (397) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (407) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (927) EPD: E-Paper initialized successfully[0m
+[0;32mI (14777) EPD: The Display is cleared[0m
+[0;32mI (14777) MAIN: Initializing DS3231 RTC[0m
+[0;31mE (14777) i2c: i2c_set_pin(928): scl gpio number error[0m
+[0;31mE (14777) DS3231: Failed to initialize I2C master[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x420086a0
+file: "./main/main.c" line 176
+func: time_sync_init
+expression: ds3231_init(I2C_MASTER_SDA_IO, I2C_MASTER_SCL_IO)
+
+abort() was called at PC 0x4038837b on core 0
+Core  0 register dump:
+MEPC    : 0x40380700  RA      : 0x40388386  SP      : 0x3fc9ece0  GP      : 0x3fc95600  
+TP      : 0x3fc7c1ac  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000004  S1      : 0x3fc9ed44  A0      : 0x3fc9ed0c  A1      : 0x3fc9ed42  
+A2      : 0x00000000  A3      : 0x3fc9ed39  A4      : 0x00000001  A5      : 0x3fc9c000  
+A6      : 0x7a797877  A7      : 0x76757473  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40380001  MCAUSE  : 0x00000007  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+Stack memory:
+3fc9ece0: 0x3c0a5f64 0x420086a4 0x3fc9ed40 0x4038fe60 0x3c0a6524 0x3c0a651c 0x00000001 0x3fc96f38
+3fc9ed00: 0x3fc9ed44 0x3fc96f54 0x3fc9ed40 0x726f6261 0x20292874 0x20736177 0x6c6c6163 0x61206465
+3fc9ed20: 0x43502074 0x34783020 0x38383330 0x20623733 0x63206e6f 0x2065726f 0x00000030 0x00000000
+3fc9ed40: 0x00000030 0x38333034 0x62373338 0x00000000 0x00000000 0x00000102 0x00000000 0x4038837e
+3fc9ed60: 0x3c0a5e34 0x00000179 0x00000000 0x420086a4 0x000000c8 0x3fc9ee7c 0x0000000a 0x42009168
+3fc9ed80: 0x00000000 0x3fc9ed5f 0x00000019 0x000039b9 0x3c0a6604 0x00000179 0x00000001 0x3fca00bc
+3fc9eda0: 0x00000000 0x00000000 0x00000000 0x420088ce 0x00000000 0x00000000 0x3fc9cca8 0x40388a4e
+3fc9edc0: 0xa5a5a5a5 0x0000001f 0x00000000 0x00000000 0x00001800 0x00000010 0x00000010 0x40380a68
+3fc9ede0: 0x3fc9f644 0x00000010 0x3fc9cca8 0x3fc9ee7c 0x3c0a33fc 0x3c0a337c 0x3c0a337c 0x00000000
+3fc9ee00: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x3fc9ee7c
+3fc9ee20: 0x3c0a33fc 0x3c0a337c 0x00000003 0x4209c69a 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9ee40: 0x00000000 0x00000000 0x3c0a3000 0x4038ecba 0x3fc9f85c 0x3fc9f85c 0x3fc9ee94 0x3fc9ee7c
+3fc9ee60: 0x00000000 0x00000000 0x00000001 0x4209ba86 0x00000000 0x3fc9f85c 0x00000000 0x3fca0240
+3fc9ee80: 0x3c0a337c 0x00000179 0x3c0a3000 0x4209ba8a 0x00000000 0x00001388 0x00000001 0x00000000
+3fc9eea0: 0x00000000 0x00000000 0x00000000 0x4038ab34 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9eec0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc9eee0: 0xa5a5a5a5 0x00000154 0x3fc9ebf0 0x000005a0 0x3fc97c08 0x3fc97c08 0x3fc9eee8 0x3fc97c00
+3fc9ef00: 0x00000018 0x3fc9ef08 0xffffffff 0x3fc9eee8 0x00000000 0x00000001 0x3fc9dee4 0x6e69616d
+3fc9ef20: 0x3fc9ef00 0x3fc9ef1c 0x00000000 0x00000000 0x3fc9eee0 0x00000001 0x00000000 0x00000000
+3fc9ef40: 0x00000000 0x00000000 0x3fc9c744 0x3fc9c7ac 0x3fc9c814 0x00000000 0x00000000 0x00000001
+3fc9ef60: 0x00000000 0x00000000 0x00000000 0x42088686 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9ef80: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9efa0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9efc0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9efe0: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9f000: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000
+3fc9f020: 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x00000000 0x3f000000 0x00000600
+3fc9f040: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc9f060: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc9f080: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc9f0a0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+3fc9f0c0: 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5 0xa5a5a5a5
+
+
+
+ELF file SHA256: 45a6e395e6606a87
+
+Rebooting...
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048b82
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1704
+load:0x403cc710,len:0x968
+load:0x403ce710,len:0x2fa8
+entry 0x403cc710
+[0;32mI (24) boot: ESP-IDF v5.1.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 19 2024 15:38:21[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=23618h (144920) map[0m
+[0;32mI (116) esp_image: segment 1: paddr=00033640 vaddr=3fc94e00 size=02c5ch ( 11356) load[0m
+[0;32mI (118) esp_image: segment 2: paddr=000362a4 vaddr=40380000 size=09d74h ( 40308) load[0m
+[0;32mI (129) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9c6d4h (640724) map[0m
+[0;32mI (234) esp_image: segment 4: paddr=000dc6fc vaddr=40389d74 size=0afech ( 45036) load[0m
+[0;32mI (250) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (250) boot: Disabling RNG early entropy source...[0m
+[0;32mI (261) cpu_start: Unicore app[0m
+[0;32mI (262) cpu_start: Pro cpu up.[0m
+[0;32mI (270) cpu_start: Pro cpu start user code[0m
+[0;32mI (270) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (270) cpu_start: Application information:[0m
+[0;32mI (273) cpu_start: Project name:     EPDTEST2[0m
+[0;32mI (278) cpu_start: App version:      287bcb8-dirty[0m
+[0;32mI (284) cpu_start: Compile time:     Nov 20 2024 13:06:33[0m
+[0;32mI (290) cpu_start: ELF file SHA256:  45a6e395e6606a87...[0m
+[0;32mI (296) cpu_start: ESP-IDF:          v5.1.5[0m
+[0;32mI (300) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (305) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (310) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (315) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (322) heap_init: At 3FC9C060 len 00023FA0 (143 KiB): DRAM[0m
+[0;32mI (328) heap_init: At 3FCC0000 len 0001C710 (113 KiB): DRAM/RETENTION[0m
+[0;32mI (335) heap_init: At 3FCDC710 len 00002950 (10 KiB): DRAM/RETENTION/STACK[0m
+[0;32mI (343) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (350) spi_flash: detected chip: generic[0m
+[0;32mI (354) spi_flash: flash io: dio[0m
+[0;32mI (358) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (364) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (372) app_start: Starting scheduler on CPU0[0m
+[0;32mI (377) main_task: Started on CPU0[0m
+[0;32mI (377) main_task: Calling app_main()[0m
+[0;32mI (387) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (387) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (397) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (407) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (927) EPD: E-Paper initialized successfully[0m

@@ -1,0 +1,319 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038617c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1704
+load:0x403cc710,len:0x968
+load:0x403ce710,len:0x2fa8
+entry 0x403cc710
+[0;32mI (24) boot: ESP-IDF v5.1.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov 19 2024 15:38:21[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=24910h (149776) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00034938 vaddr=3fc94e00 size=02c6ch ( 11372) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=000375ac vaddr=40380000 size=08a6ch ( 35436) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=9c218h (639512) map[0m
+[0;32mI (235) esp_image: segment 4: paddr=000dc240 vaddr=40388a6c size=0c2f4h ( 49908) load[0m
+[0;32mI (251) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (252) boot: Disabling RNG early entropy source...[0m
+[0;32mI (263) cpu_start: Unicore app[0m
+[0;32mI (263) cpu_start: Pro cpu up.[0m
+[0;32mI (272) cpu_start: Pro cpu start user code[0m
+[0;32mI (272) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (272) cpu_start: Application information:[0m
+[0;32mI (275) cpu_start: Project name:     EPDTEST2[0m
+[0;32mI (280) cpu_start: App version:      287bcb8-dirty[0m
+[0;32mI (285) cpu_start: Compile time:     Nov 20 2024 13:06:33[0m
+[0;32mI (291) cpu_start: ELF file SHA256:  62c8fa1f350ac8d8...[0m
+[0;32mI (297) cpu_start: ESP-IDF:          v5.1.5[0m
+[0;32mI (302) cpu_start: Min chip rev:     v0.3[0m
+[0;32mI (307) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (312) cpu_start: Chip rev:         v0.4[0m
+[0;32mI (317) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (324) heap_init: At 3FC9C070 len 00023F90 (143 KiB): DRAM[0m
+[0;32mI (330) heap_init: At 3FCC0000 len 0001C710 (113 KiB): DRAM/RETENTION[0m
+[0;32mI (337) heap_init: At 3FCDC710 len 00002950 (10 KiB): DRAM/RETENTION/STACK[0m
+[0;32mI (345) heap_init: At 50000010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (352) spi_flash: detected chip: generic[0m
+[0;32mI (356) spi_flash: flash io: dio[0m
+[0;32mI (360) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (366) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (374) app_start: Starting scheduler on CPU0[0m
+[0;32mI (378) main_task: Started on CPU0[0m
+[0;32mI (378) main_task: Calling app_main()[0m
+[0;32mI (388) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (388) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (398) gpio: GPIO[7]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (408) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (928) EPD: E-Paper initialized successfully[0m
+[0;32mI (928) MAIN: ESP_WIFI_MODE_STA[0m
+[0;32mI (928) pp: pp rom version: 9387209[0m
+[0;32mI (928) net80211: net80211 rom version: 9387209[0m
+[0;32mI (938) wifi:wifi driver task: 3fca4f14, prio:23, stack:6656, core=0[0m
+[0;32mI (938) wifi:wifi firmware version: bbd58fc31[0m
+[0;32mI (948) wifi:wifi certification version: v7.0[0m
+[0;32mI (948) wifi:config NVS flash: enabled[0m
+[0;32mI (948) wifi:config nano formating: disabled[0m
+[0;32mI (948) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (958) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (958) wifi:Init management short buffer num: 32[0m
+[0;32mI (968) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (968) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (978) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (978) wifi:Init static rx buffer num: 10[0m
+[0;32mI (978) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (988) wifi_init: rx ba win: 6[0m
+[0;32mI (988) wifi_init: tcpip mbox: 32[0m
+[0;32mI (998) wifi_init: udp mbox: 6[0m
+[0;32mI (998) wifi_init: tcp mbox: 6[0m
+[0;32mI (998) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1008) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1008) wifi_init: tcp mss: 1440[0m
+[0;32mI (1018) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1018) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (1028) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (1028) phy_init: phy_version 1180,01f2a49,Jun  4 2024,16:34:25[0m
+[0;32mI (1078) wifi:mode : sta (74:4d:bd:e2:98:6c)[0m
+[0;32mI (1078) wifi:enable tsf[0m
+[0;32mI (1078) MAIN: wifi_init_sta finished.[0m
+[0;32mI (1108) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (1108) wifi:state: init -> auth (b0)[0m
+[0;32mI (1118) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1198) wifi:state: assoc -> run (10)[0m
+[0;32mI (1218) wifi:connected with ESPP, aid = 1, channel 11, BW20, bssid = ea:f3:bc:e1:76:3f[0m
+[0;32mI (1218) wifi:security: WPA2-PSK, phy: bgn, rssi: -37[0m
+[0;32mI (1218) wifi:pm start, type: 1[0m
+
+[0;32mI (1228) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1228) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1308) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1318) wifi:<ba-add>idx:0 (ifx:0, ea:f3:bc:e1:76:3f), tid:0, ssn:0, winSize:64[0m
+[0;32mI (2238) esp_netif_handlers: sta ip: 192.168.137.251, mask: 255.255.255.0, gw: 192.168.137.1[0m
+[0;32mI (2238) MAIN: got ip:192.168.137.251[0m
+[0;32mI (2238) MAIN: connected to ap[0m
+[0;32mI (2238) DS3231: DS3231 initialized successfully[0m
+[0;32mI (2248) MAIN: RTC initialized successfully[0m
+[0;32mI (2248) MAIN: Initializing SNTP[0m
+[0;32mI (2258) MAIN: Waiting for NTP sync... (1/20)[0m
+[0;32mI (4258) MAIN: Waiting for NTP sync... (2/20)[0m
+[0;32mI (6258) MAIN: Waiting for NTP sync... (3/20)[0m
+[0;32mI (6938) wifi:<ba-add>idx:1 (ifx:0, ea:f3:bc:e1:76:3f), tid:6, ssn:2, winSize:64[0m
+[0;32mI (7148) MAIN: Notification of a time synchronization event[0m
+[0;33mW (8258) MAIN: NTP sync failed, proceeding with RTC time[0m
+[0;32mI (8258) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:19"}
+[0m
+[0;32mI (8318) EPD: QR code displayed successfully[0m
+[0;32mI (22178) EPD: The Image had been Displayed[0m
+[0;32mI (52178) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:19"}
+[0m
+[0;32mI (52228) EPD: QR code displayed successfully[0m
+[0;32mI (66088) EPD: The Image had been Displayed[0m
+[0;32mI (96088) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:20"}
+[0m
+[0;32mI (96138) EPD: QR code displayed successfully[0m
+[0;32mI (109998) EPD: The Image had been Displayed[0m
+[0;32mI (139998) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:21"}
+[0m
+[0;32mI (140048) EPD: QR code displayed successfully[0m
+[0;32mI (153908) EPD: The Image had been Displayed[0m
+[0;32mI (163208) wifi:state: run -> init (7a0)[0m
+[0;32mI (163218) wifi:pm stop, total sleep time: 106302921 us / 161990315 us[0m
+
+[0;32mI (163218) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (163218) wifi:<ba-del>idx:1, tid:6[0m
+[0;32mI (163218) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (163228) MAIN: retry to connect to the AP[0m
+[0;32mI (163228) MAIN: connect to the AP fail[0m
+[0;32mI (165638) MAIN: retry to connect to the AP[0m
+[0;32mI (165638) MAIN: connect to the AP fail[0m
+[0;32mI (168038) MAIN: retry to connect to the AP[0m
+[0;32mI (168038) MAIN: connect to the AP fail[0m
+[0;32mI (170448) MAIN: retry to connect to the AP[0m
+[0;32mI (170448) MAIN: connect to the AP fail[0m
+[0;32mI (172858) MAIN: retry to connect to the AP[0m
+[0;32mI (172858) MAIN: connect to the AP fail[0m
+[0;32mI (175268) MAIN: connect to the AP fail[0m
+[0;32mI (183908) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:22"}
+[0m
+[0;32mI (183958) EPD: QR code displayed successfully[0m
+[0;32mI (197818) EPD: The Image had been Displayed[0m
+[0;32mI (227818) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:22"}
+[0m
+[0;32mI (227868) EPD: QR code displayed successfully[0m
+[0;32mI (241728) EPD: The Image had been Displayed[0m
+[0;32mI (271728) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:23"}
+[0m
+[0;32mI (271778) EPD: QR code displayed successfully[0m
+[0;32mI (285638) EPD: The Image had been Displayed[0m
+[0;32mI (315638) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:24"}
+[0m
+[0;32mI (315688) EPD: QR code displayed successfully[0m
+[0;32mI (329548) EPD: The Image had been Displayed[0m
+[0;32mI (359548) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:24"}
+[0m
+[0;32mI (359598) EPD: QR code displayed successfully[0m
+[0;32mI (373458) EPD: The Image had been Displayed[0m
+[0;32mI (403458) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:25"}
+[0m
+[0;32mI (403508) EPD: QR code displayed successfully[0m
+[0;32mI (417368) EPD: The Image had been Displayed[0m
+[0;32mI (447368) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:26"}
+[0m
+[0;32mI (447418) EPD: QR code displayed successfully[0m
+[0;32mI (461278) EPD: The Image had been Displayed[0m
+[0;32mI (491278) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:27"}
+[0m
+[0;32mI (491328) EPD: QR code displayed successfully[0m
+[0;32mI (505188) EPD: The Image had been Displayed[0m
+[0;32mI (535188) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:27"}
+[0m
+[0;32mI (535238) EPD: QR code displayed successfully[0m
+[0;32mI (549098) EPD: The Image had been Displayed[0m
+[0;32mI (579098) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:28"}
+[0m
+[0;32mI (579148) EPD: QR code displayed successfully[0m
+[0;32mI (593008) EPD: The Image had been Displayed[0m
+[0;32mI (623008) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:29"}
+[0m
+[0;32mI (623058) EPD: QR code displayed successfully[0m
+[0;32mI (636918) EPD: The Image had been Displayed[0m
+[0;32mI (666918) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:30"}
+[0m
+[0;32mI (666968) EPD: QR code displayed successfully[0m
+[0;32mI (680828) EPD: The Image had been Displayed[0m
+[0;32mI (710828) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:30"}
+[0m
+[0;32mI (710878) EPD: QR code displayed successfully[0m
+[0;32mI (724738) EPD: The Image had been Displayed[0m
+[0;32mI (754738) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:31"}
+[0m
+[0;32mI (754788) EPD: QR code displayed successfully[0m
+[0;32mI (768648) EPD: The Image had been Displayed[0m
+[0;32mI (798648) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:32"}
+[0m
+[0;32mI (798698) EPD: QR code displayed successfully[0m
+[0;32mI (812558) EPD: The Image had been Displayed[0m
+[0;32mI (842558) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:33"}
+[0m
+[0;32mI (842608) EPD: QR code displayed successfully[0m
+[0;32mI (856468) EPD: The Image had been Displayed[0m
+[0;32mI (886468) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:33"}
+[0m
+[0;32mI (886518) EPD: QR code displayed successfully[0m
+[0;32mI (900378) EPD: The Image had been Displayed[0m
+[0;32mI (930378) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:34"}
+[0m
+[0;32mI (930428) EPD: QR code displayed successfully[0m
+[0;32mI (944288) EPD: The Image had been Displayed[0m
+[0;32mI (974288) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:35"}
+[0m
+[0;32mI (974338) EPD: QR code displayed successfully[0m
+[0;32mI (988198) EPD: The Image had been Displayed[0m
+[0;32mI (1018198) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:35"}
+[0m
+[0;32mI (1018248) EPD: QR code displayed successfully[0m
+[0;32mI (1032108) EPD: The Image had been Displayed[0m
+[0;32mI (1062108) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:36"}
+[0m
+[0;32mI (1062158) EPD: QR code displayed successfully[0m
+[0;32mI (1076018) EPD: The Image had been Displayed[0m
+[0;32mI (1106018) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:37"}
+[0m
+[0;32mI (1106068) EPD: QR code displayed successfully[0m
+[0;32mI (1119928) EPD: The Image had been Displayed[0m
+[0;32mI (1149928) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:38"}
+[0m
+[0;32mI (1149978) EPD: QR code displayed successfully[0m
+[0;32mI (1163838) EPD: The Image had been Displayed[0m
+[0;32mI (1193838) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:38"}
+[0m
+[0;32mI (1193888) EPD: QR code displayed successfully[0m
+[0;32mI (1207748) EPD: The Image had been Displayed[0m
+[0;32mI (1237748) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:39"}
+[0m
+[0;32mI (1237798) EPD: QR code displayed successfully[0m
+[0;32mI (1251658) EPD: The Image had been Displayed[0m
+[0;32mI (1281658) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:40"}
+[0m
+[0;32mI (1281708) EPD: QR code displayed successfully[0m
+[0;32mI (1295568) EPD: The Image had been Displayed[0m
+[0;32mI (1325568) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:41"}
+[0m
+[0;32mI (1325618) EPD: QR code displayed successfully[0m
+[0;32mI (1339478) EPD: The Image had been Displayed[0m
+[0;32mI (1369478) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:41"}
+[0m
+[0;32mI (1369528) EPD: QR code displayed successfully[0m
+[0;32mI (1383388) EPD: The Image had been Displayed[0m
+[0;32mI (1413388) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:42"}
+[0m
+[0;32mI (1413438) EPD: QR code displayed successfully[0m
+[0;32mI (1427298) EPD: The Image had been Displayed[0m
+[0;32mI (1457298) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:43"}
+[0m
+[0;32mI (1457348) EPD: QR code displayed successfully[0m
+[0;32mI (1471208) EPD: The Image had been Displayed[0m
+[0;32mI (1501208) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:44"}
+[0m
+[0;32mI (1501258) EPD: QR code displayed successfully[0m
+[0;32mI (1515118) EPD: The Image had been Displayed[0m
+[0;32mI (1545118) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:44"}
+[0m
+[0;32mI (1545168) EPD: QR code displayed successfully[0m
+[0;32mI (1559028) EPD: The Image had been Displayed[0m
+[0;32mI (1589028) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:45"}
+[0m
+[0;32mI (1589078) EPD: QR code displayed successfully[0m
+[0;32mI (1602938) EPD: The Image had been Displayed[0m
+[0;32mI (1632938) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:46"}
+[0m
+[0;32mI (1632988) EPD: QR code displayed successfully[0m
+[0;32mI (1646848) EPD: The Image had been Displayed[0m
+[0;32mI (1676848) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:46"}
+[0m
+[0;32mI (1676898) EPD: QR code displayed successfully[0m
+[0;32mI (1690758) EPD: The Image had been Displayed[0m
+[0;32mI (1720758) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:47"}
+[0m
+[0;32mI (1720808) EPD: QR code displayed successfully[0m
+[0;32mI (1734668) EPD: The Image had been Displayed[0m
+[0;32mI (1764668) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:48"}
+[0m
+[0;32mI (1764718) EPD: QR code displayed successfully[0m
+[0;32mI (1778578) EPD: The Image had been Displayed[0m
+[0;32mI (1808578) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:49"}
+[0m
+[0;32mI (1808628) EPD: QR code displayed successfully[0m
+[0;32mI (1822488) EPD: The Image had been Displayed[0m
+[0;32mI (1852488) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:49"}
+[0m
+[0;32mI (1852538) EPD: QR code displayed successfully[0m
+[0;32mI (1866398) EPD: The Image had been Displayed[0m
+[0;32mI (1896398) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:50"}
+[0m
+[0;32mI (1896448) EPD: QR code displayed successfully[0m
+[0;32mI (1910308) EPD: The Image had been Displayed[0m
+[0;32mI (1940308) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:51"}
+[0m
+[0;32mI (1940358) EPD: QR code displayed successfully[0m
+[0;32mI (1954218) EPD: The Image had been Displayed[0m
+[0;32mI (1984218) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:52"}
+[0m
+[0;32mI (1984268) EPD: QR code displayed successfully[0m
+[0;32mI (1998128) EPD: The Image had been Displayed[0m
+[0;32mI (2028128) MAIN: QR String: {"Machine_ID": "66b5e59a388d38768bb00a0d","Time": "20/11/24|18:52"}
+[0m
+[0;32mI (2028178) EPD: QR code displayed successfully[0m
+[0;32mI (2042038) EPD: The Image had been Displayed[0m
