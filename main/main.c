@@ -8,7 +8,6 @@
  * @copyright Copyright (c) 2024
  * 
  */
-//sodihfgogaieyrigaqeyhrgiyaeo8rty7a
 #include <string.h>
 #include <time.h>
 #include <sys/time.h>
