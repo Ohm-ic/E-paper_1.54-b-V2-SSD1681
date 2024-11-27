@@ -34,6 +34,7 @@ static EventGroupHandle_t s_wifi_event_group;
 #define WIFI_CONNECTED_BIT BIT0
 #define WIFI_FAIL_BIT BIT1
 bool wifi_flag = false;
+bool sntp_init_flag = false;
 
 static const char *TAG = "MAIN";
 static int s_retry_num = 0;
@@ -145,6 +146,8 @@ static void initialize_sntp(void)
     sntp_setservername(0, "time.google.com");
     sntp_set_time_sync_notification_cb(time_sync_notification_cb);
     sntp_init();
+    ESP_LOGI(TAG,"SNTP Initialized...");
+    sntp_init_flag = true;
 }
 
 // Get formatted time string
@@ -188,7 +191,7 @@ void sync_rtc_with_ntp(void) {
         vTaskDelay(2000 / portTICK_PERIOD_MS);
     }
 
-    if (sntp_get_sync_status() != SNTP_SYNC_STATUS_RESET) {
+    if (sntp_init_flag) {
         time_t now;
         time(&now);
         struct tm timeinfo;
@@ -208,6 +211,8 @@ void sync_rtc_with_ntp(void) {
 
 void get_time_from_rtc(char *buffer, size_t buffer_size) {
     struct tm timeinfo;
+  
+
     if (ds3231_get_time(&timeinfo) == ESP_OK) {
         strftime(buffer, buffer_size, "%d/%m/%y|%H:%M", &timeinfo);
         ESP_LOGI(TAG, "RTC Time: %s", buffer);
@@ -216,6 +221,7 @@ void get_time_from_rtc(char *buffer, size_t buffer_size) {
         snprintf(buffer, buffer_size, "RTC Error");
     }
 }
+
 
 
 
@@ -246,14 +252,25 @@ void app_main(void) {
         
     }
 
+
+
     // Main loop to display time
     while (1) {
+      
         time_t now;
         char strftime_buf[64];
         char qr_string[128];
-
-
         time(&now);
+
+              esp_err_t reet;
+      time_t unix_time;
+
+        reet = ds3231_get_unix_time(&unix_time);
+        if (reet == ESP_OK) {
+            ESP_LOGI(TAG,"UNIX_TIME: %lld",unix_time);
+        }else{
+            ESP_LOGE(TAG,"Failed to get time");
+        }
 
         // Get time
         if (bits & WIFI_CONNECTED_BIT) {
@@ -263,7 +280,7 @@ void app_main(void) {
         }
 
         // Display time
-        snprintf(qr_string, sizeof(qr_string), "{\"Machine_ID\": \"66b5e59a388d38768bb00a0d\",\"Time\": \"%lld\"}\n", (long long)now);
+        snprintf(qr_string, sizeof(qr_string), "{\"Machine_ID\": \"66b5e59a388d38768bb00a0d\",\"Time\": \"%lld\"}\n", unix_time);
         ESP_LOGI(TAG, "QR String: %s", qr_string);
 
         EPD_InitBuffers(); // Initialize shared buffers
